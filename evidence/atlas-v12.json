@@ -1,0 +1,234 @@
+{
+  "upstream": {
+    "url": "https://github.com/tc1911/kShimC4sheng",
+    "revision": "7aafa11dce809f759bb45c933083a827e5e8e6d4",
+    "imports": [
+      {
+        "upstream": "vendor/kshim/src/ui/menu_atlas.h",
+        "upstream_sha256": "879f8ae44641947f477a2a3d7f2af6f936e14af0fa4d6b45ea74dba22407e392",
+        "local": "boot/vendor/kshim/src/ui/menu_atlas.h",
+        "local_sha256": "7669504d6be3e7b4b5fa026d6165a1fde36ef8b9352546ffe9446468f0b18f8f"
+      },
+      {
+        "upstream": "vendor/kshim/src/ui/atlas_icons.h",
+        "upstream_sha256": "b39f5ef8f59ae62b90674e23dddef8cefd2b5bc278c6c61db867cf6628ec695b",
+        "local": "boot/vendor/kshim/src/ui/atlas_icons.h",
+        "local_sha256": "b39f5ef8f59ae62b90674e23dddef8cefd2b5bc278c6c61db867cf6628ec695b"
+      },
+      {
+        "upstream": "vendor/kshim/src/ui/lvgl_port.c",
+        "upstream_sha256": "efb29464950f77e99df95ce3e3ca4540fc8f12a0cd912e16140c5d1ad40e9b24",
+        "local": "boot/vendor/kshim/src/ui/lvgl_port.c",
+        "local_sha256": "93197e8719970efbab2aaf8167dd3c390632d6234fc89f9de68b15ecf5ff9058"
+      },
+      {
+        "upstream": "vendor/kshim/src/core/platform.c",
+        "upstream_sha256": "77cd7ea7e294e896fc56ab4ee4e5ab4bc7a43216f89225f4be2c06b49588544e",
+        "local": "boot/vendor/kshim/src/core/platform.c",
+        "local_sha256": "79149d908bef44186a78fe5c9e3329aa7f48644bbe0f125c475d16408865b82c"
+      },
+      {
+        "upstream": "vendor/kshim/src/core/menu_locale.c",
+        "upstream_sha256": "1be356f10698517eefe2fa23fcc0b60349ee7008b3827e0ae981f5c2654750ef",
+        "local": "boot/vendor/kshim/src/core/menu_locale.c",
+        "local_sha256": "a5d04b35eacea380e6797c0384f9fd43da0df11de9ba2da84c280bff0f69417d"
+      },
+      {
+        "upstream": "vendor/kshim/src/drivers/qcom_reboot.c",
+        "upstream_sha256": "8a12e09eac94988f011e21f4f42f5e71172d4cb03e17d76def6a6b30599f20b6",
+        "local": "boot/vendor/kshim/src/drivers/qcom_reboot.c",
+        "local_sha256": "e515b417c3995dc1575b0872859379cc5bed9eddb53c1536a214b688b7a8b4ae"
+      },
+      {
+        "upstream": "vendor/kshim/src/Kconfig",
+        "upstream_sha256": "2c8c0b2cc6e154751c3838a948ece351481d954663325ebbdede47005d798ea3",
+        "local": "boot/vendor/kshim/src/Kconfig",
+        "local_sha256": "b291fa03a57704fe1ecb8f6638dabe43c8bd07da250278aa4169d68c113d3bd9"
+      },
+      {
+        "upstream": "vendor/kshim/src/include/lvgl_port.h",
+        "upstream_sha256": "f3a76241154116170b2c1e3ea4d061fbf59e4d4849ae19b71736c1676de1023e",
+        "local": "boot/vendor/kshim/src/include/lvgl_port.h",
+        "local_sha256": "f3a76241154116170b2c1e3ea4d061fbf59e4d4849ae19b71736c1676de1023e"
+      },
+      {
+        "upstream": "vendor/kshim/src/include/menu_locale.h",
+        "upstream_sha256": "6358b5a2b39450f57b244d5142bc1f081ce52189a63aaadbca35dfb8dd5701fd",
+        "local": "boot/vendor/kshim/src/include/menu_locale.h",
+        "local_sha256": "e4851d1826c68ef4cb4283299538f18d8b66c2d46961f7ad023d149e4559e3e4"
+      }
+    ],
+    "license": "GPL-3.0; existing vendor/kshim/LICENSE retained"
+  },
+  "status": "linux_android_and_menu_verified_by_user",
+  "scope": "Atlas v12; persistence explicitly deferred, no /dev/sda modifications allowed",
+  "build": {
+    "passed": true,
+    "mode": "external-production",
+    "hardware_verified": true,
+    "boot_sha256": "84a7ab284dc5ba0f141dc356dc93b1c3831b012135c70fbab921f032b0809e7d",
+    "stock_boot_sha256": "2225e3447ee3c3833dea11aedc82f3123d3d391ab231b791c4b90a65e56169ce",
+    "runtime_sha256": "d686e0020d7b6c4ffdb48b16f27e47e9af2e8d0a838d22d9af6528311389e079",
+    "packed_kernel_bytes": 41550028,
+    "layout": {
+      "entries": [
+        {
+          "offset": 0,
+          "bytes": 36731392,
+          "type": 1,
+          "flags": 5,
+          "dtb_index": 0,
+          "name": "原厂 Android"
+        },
+        {
+          "offset": 37355520,
+          "bytes": 4194304,
+          "type": 3,
+          "flags": 4,
+          "dtb_index": 0,
+          "name": "Attached Shim"
+        }
+      ],
+      "linux_embedded": false,
+      "android_retained": true,
+      "original_base_restored": true,
+      "runtime_slot_bytes": 4194304
+    },
+    "device_written": false,
+    "hardware_verification_scope": "Linux and Android boot paths reported by user"
+  },
+  "hardware_verified": true,
+  "device_written": false,
+  "tests": {
+    "ext4_integration_cases": 23,
+    "native_ufs_session_cases": 15,
+    "related_vendor_regression_cases": 6,
+    "atlas": "real LVGL, 512 KiB heap, ASan/UBSan, 6 pages, 2 languages, all 9 generic rows through keys, 3 UI lifecycles",
+    "platform": "real page builder and action handling, delay/language/back, caller index mapping",
+    "hardware_dt": "parse-only stock DT, no SMC or SPMI hardware execution"
+  },
+  "limitations": [
+    "Settings/last boot are not persistent by user choice",
+    "Charger UI is deferred",
+    "Individual power/reboot modes have not been explicitly hardware verified"
+  ],
+  "pmic_conflict": {
+    "stock_runtime_dtb_sha256": "e1267c37bea89299573b0edd7a72cc6372004771bee1bd6a135e586c461e3ea4",
+    "sdam": [
+      "0x8400",
+      "0x8500"
+    ],
+    "consumer": "qcom,pm8350c-pwm led-controller; lpg_chan_sdam/lut_sdam",
+    "upstream_qcom_nv_imported": false
+  },
+  "source_sha256": {
+    "boot/kshim-ext4.config": "7bd6365717c4df30c43bedca9c52636ea869aa556e873548f6278a15de1cd225",
+    "boot/vendor/kshim/CMakeLists.txt": "54624bc63a4d1b16c51a8b2fbc68a979fb92c62412c2ae1fe28474f35d30fab4",
+    "boot/vendor/kshim/src/Kconfig": "b291fa03a57704fe1ecb8f6638dabe43c8bd07da250278aa4169d68c113d3bd9",
+    "boot/vendor/kshim/src/arch/arm64/aarch64.lds": "03e4ce26b743ca447cacbdbfbae07f55f690ba1436db84931af37e3310f32ad3",
+    "boot/vendor/kshim/src/arch/arm64/arm64.S": "c4b2f9efaa1396d26902f9e939d944159925ff24f94dd9cf0dc542e35a3207b6",
+    "boot/vendor/kshim/src/arch/arm64/gicv3.S": "9baab53fd2ecba3271d0fae1ddf5328f2c08a4f1e2d2749fc5df88afd87984d1",
+    "boot/vendor/kshim/src/arch/arm64/mpstartup.S": "fb02c703b86f8f118187393672e0eeec744d3ce26cf84c6aaae83d3949bb8c99",
+    "boot/vendor/kshim/src/arch/arm64/psci.S": "7de0f261f5a565de86254b9c3b641bd05e5c41c07258c3524ab18c9911259797",
+    "boot/vendor/kshim/src/arch/arm64/smc.S": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "boot/vendor/kshim/src/arch/arm64/startup.S": "ba79a071b18d1dfaa8e43db28b9d22baf64eab160565c0bdf2c19d314ea5ef25",
+    "boot/vendor/kshim/src/arch/arm64/storage_probe_load.S": "bb82c1082fb121985f09be5b6b8ae3a82a5c082ed82463412a2c11cd76f4d6b8",
+    "boot/vendor/kshim/src/arch/arm64/storage_ufs_store.S": "38074ee3903bf8fc3d6daf987439362a74640d9524576f447b90e3e6c0072a98",
+    "boot/vendor/kshim/src/arch/arm64/timer.S": "f5df9202d42f59d2c8685cb99483a292eff7e20d4df373fbcda0f7eb9dd9d26b",
+    "boot/vendor/kshim/src/arch/arm64/uefi_payload.S.in": "884a1dd49751d9c583863dac94e3ac35b5eaf1177d1c187ae2ba9c4a6910d544",
+    "boot/vendor/kshim/src/core/menu_locale.c": "a5d04b35eacea380e6797c0384f9fd43da0df11de9ba2da84c280bff0f69417d",
+    "boot/vendor/kshim/src/core/platform.c": "79149d908bef44186a78fe5c9e3329aa7f48644bbe0f125c475d16408865b82c",
+    "boot/vendor/kshim/src/drivers/qcom_reboot.c": "e515b417c3995dc1575b0872859379cc5bed9eddb53c1536a214b688b7a8b4ae",
+    "boot/vendor/kshim/src/include/lv_conf.h": "cef928ee6e8181a3dd7cd35be8edf3b80d46413596dfa027fa5d5d0d268511ca",
+    "boot/vendor/kshim/src/include/lvgl_port.h": "f3a76241154116170b2c1e3ea4d061fbf59e4d4849ae19b71736c1676de1023e",
+    "boot/vendor/kshim/src/include/menu_locale.h": "e4851d1826c68ef4cb4283299538f18d8b66c2d46961f7ad023d149e4559e3e4",
+    "boot/vendor/kshim/src/ui/atlas_icons.h": "b39f5ef8f59ae62b90674e23dddef8cefd2b5bc278c6c61db867cf6628ec695b",
+    "boot/vendor/kshim/src/ui/fonts/lxgw_wenkai_atlas-OFL.txt": "c38b1994a5e48ac30ac7d1da7d0409fd8fd8127dfe28a13d6e787d5b1ef34a5e",
+    "boot/vendor/kshim/src/ui/fonts/lxgw_wenkai_atlas.ksf": "2b8d79a38805061451e25b9946205d5bb4b0e963c227e9ae2652382349f8c61a",
+    "boot/vendor/kshim/src/ui/fonts/lxgw_wenkai_atlas.provenance.json": "5da5e496e68e7cbf65b5d04c0d0da79c42926766fd3923ed921ae6171aae14b1",
+    "boot/vendor/kshim/src/ui/fonts/ui_font_blob.S.in": "ef4a6230ced751e6fee24bde10b03686529d505fa5ef9f244e66ae3d5cf4cbdd",
+    "boot/vendor/kshim/src/ui/lvgl_port.c": "93197e8719970efbab2aaf8167dd3c390632d6234fc89f9de68b15ecf5ff9058",
+    "boot/vendor/kshim/src/ui/menu_atlas.h": "7669504d6be3e7b4b5fa026d6165a1fde36ef8b9352546ffe9446468f0b18f8f",
+    "boot/vendor/kshim/src/ui/menu_design.Kconfig": "51bbda9b5a225780540cf3cdaa7cbd4255a671307e0f8dfac8c6329212818bed",
+    "boot/vendor/kshim/src/ui/styles/new_themes.Kconfig": "10f7a1b9430ef0a1e2ffd538163ffd25863fc9ea219fa76f416c1ac23ebfdb8e",
+    "boot/vendor/kshim/tests/CMakeLists.txt": "dcbd00d4c1a281d77170fac9a1fb6f8e85c8b5c4c71e20f72f77ef4467ce7177",
+    "boot/vendor/kshim/tests/atlas_menu_test.c": "353c718c0a6ad276a6b1e8fa3b72291f6a6fbdd107b3a57637d341b2fee0ebbc",
+    "boot/vendor/kshim/tests/atlas_platform_test.c": "b0e368edcb5d3dcfe4fca33c65eb54f48a8f2eb54cf2702f85aa2fc7610c3995",
+    "boot/vendor/kshim/third_party/lvgl/src/draw/sw/blend/helium/lv_blend_helium.S": "8d69a7fc569838e5883984351ec43b8a9a3848fcdda74d1064980a8853925100",
+    "boot/vendor/kshim/third_party/lvgl/src/draw/sw/blend/neon/lv_blend_neon.S": "8ca12420d66b0fe5fd2c2cf06f88299c5a92b428891d0e3bf60f96a8ed5a4362",
+    "boot/vendor/kshim/third_party/lvgl/src/drivers/README.md": "2a9ad36e968e1b69061bd9e8dd88ac4ec6d48ff2b463441ae81bfa4dc67bdc3c",
+    "boot/vendor/kshim/third_party/lvgl/src/drivers/display/tft_espi/lv_tft_espi.cpp": "a4a80f734a5162f03cc2e0800535f5e29e77455547532fbb675862c20e337fd8",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/freetype/arial.ttf": "82afb35eda3a52edb10106bcc04af93646384421ded538d38792c1444d816022",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/fsdrv/lv_fs_arduino_esp_littlefs.cpp": "3a836d40a194f96c8c1adcadbd67213386d266820b58f15d8d98119c7bc319d1",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/fsdrv/lv_fs_arduino_sd.cpp": "fbf7245ffa0bdf5a74463ae79f0db84536cad84f7f1294b62232b71edb2c4d9a",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/lz4/LICENSE": "8b58c446121a109ccf32edc094bba3010a3d85e4ee3702950db55e4d3e87736c",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/add_lvgl_if.sh": "e286f5ec715c8b74eb538934be6c08c091e2c6f5ee93b6b9276615c12eb0a754",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgAccessor.cpp": "fa75f01c4c195d91524942854932d6c13aed14cbcf2f972c558f9d72d15950b1",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgAnimation.cpp": "10f29beb2325ab4c0bee5520f806c11d9c00a17115cf572d1fd14d5a2546bfaa",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgCanvas.cpp": "dcb0c08007fc51c70b2a5d599112ec890cfa9fc3b8d692c47a0ab6ada9ac4aa8",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgCapi.cpp": "84849c64ea65a123e4c720b25c75c00dcf4ed34441e9f45fc7017262c4c0a732",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgCompressor.cpp": "c1369541ff74b8b0da9cda038e7c268a71bb12da325fdd9db833d1b55e0adfb7",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgFill.cpp": "9269c5fb7ce79c116a7cdc6cc208c1b24a6eac0586b541cf0a6a936879500626",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgGlCanvas.cpp": "bdb44c3b603ad36244a9d3700aeeb1e96c7549375e5fb9f3de432c6371b370b5",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgInitializer.cpp": "6ae50a6bd760423fa7e7422c8f629574e7acab36d391f6dd5847132a62ca32e2",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgLines.cpp": "02b353fe8443084a06d7a4d194001acd849cd4befd5f346c042d0621332d80ae",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgLoader.cpp": "cbad2ed1eb9c950b6de7e29b53f3653c2adf45555ec00caf4d7515422ac2fbf6",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgLottieAnimation.cpp": "1991c62abd39fd31d0da87ea2097e1cda4b6a85e4e59f2608b9630ecf1ed4e25",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgLottieBuilder.cpp": "a85dd7c1332cbc721df6ba72c23a8bb6c22a0fb04acbb46ff020d5f122dd6fd6",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgLottieExpressions.cpp": "6d3ad44247512810286d236eed7b833827cac8a446d813ec762e311b58ce4cc7",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgLottieInterpolator.cpp": "6c3da5d62244ff6ab38410a4d83c14b881fd8820d9939647dccb13b9f8ed38c7",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgLottieLoader.cpp": "327d872a5ce0fd83dcb10d8c552ff25921fa1e29ed638079b1026a0326f9979f",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgLottieModel.cpp": "3c74fe73eb0e026fa56e381e4ecab6faae71520c0130e5ea661731fe182a57d2",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgLottieParser.cpp": "831d16404e7839794ab3503640895f42df3717a99485cf15207f67f8a0bd1685",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgLottieParserHandler.cpp": "3c2200c1a960e49137495c673b093eca5143629ee51ccde0a7a6696fe00fdd2f",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgMath.cpp": "c78ba2b6f19423468fb33dd3feee88781626ffb6d96438f2fc4ad9930a3ac14e",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgPaint.cpp": "7ba1f065fdce44056a6f7cd8b951a2bbf1af58c0a1f667b9235ad7f9c24b6ffd",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgPicture.cpp": "1ee6c3bcf06d4181471398420c1bf82528219ee094e19af55ff045f85cbf8dcf",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgRawLoader.cpp": "b10498c0e8ab7529a0b007e040a8a22232e9bf43268f80780e05b5a5866e9df1",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgRender.cpp": "d7885d962677d3655f809a0fa5d1e05bd341f3fd0e3a9baf9f3945525ba63295",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSaver.cpp": "84763b5f5c33a7346fd11f9fce2d4443fcae194aa12c941c69be1c5201794e5c",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgScene.cpp": "613e75e1287f08ff1d95ef485b7e7ebd4aa74e665169ede58f5df586e394972c",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgShape.cpp": "36bbbab56b624d242f3b7765c9bcad3f978751d0d8973b548fc2f21813d1504b",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgStr.cpp": "88045617895a1634957996fda2ca3d97fc72eb746b7964bab1d3b93e33c084b2",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSvgCssStyle.cpp": "b4421970561563b11da236fefb0ad35aac45430effaff622070ddc2a2fec0b65",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSvgLoader.cpp": "18a37d28a8de84446366d49f34f3edadfdfefa98a2348eaa4a7dfde3a3ed1c09",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSvgPath.cpp": "704dcbe375a49fd8217b8e01c76e17e1322aec737e387228a8d057935f34d994",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSvgSceneBuilder.cpp": "fee5416a725e3e0f3646ed6e6d71d82443168877f38276fdee25c30f68339ee6",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSvgUtil.cpp": "c60970562441f9766e6f70be5653edc66fc37e9c9d4f573d0a7229764ccc95f1",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSwCanvas.cpp": "748cd861a8fb2f4f21b4659e5d867a141c0c358e8db77fc92b7f8ce2056bee9c",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSwFill.cpp": "19885764732547df9dd9e8c0544beab254e046295cfc9ae25f99f30abc4afb9f",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSwImage.cpp": "877b558a17560d80fdd8942c40e567271c94d1e256c3a0b704722d9c5ef28aa6",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSwMath.cpp": "a5a11b4b19df1164eba30967ca8eefedc39ceeed20b8bd9dfd9c1658b12aae9b",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSwMemPool.cpp": "25474460e4e105f8a34101df917c6c6f666770ac7aa9ca2d5c117a7ed2fd80ce",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSwRaster.cpp": "606a78308468bc1812f69cddfb239a78d974b96d436f0ed5982166a7f2aa7581",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSwRenderer.cpp": "0771efc1d339c0d764c6f87f95607ec1c70dd729d2b09abb62a0e97e28018634",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSwRle.cpp": "c44f9e2cf3c3a8d11fbae83efbd2c7966f938a1008b645687b7dacbd08ee9582",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSwShape.cpp": "f3ce4ac713be2526dc7cb3815107e2c58bf1e952d6873a7c6f7ed0edb85ad96a",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgSwStroke.cpp": "6c495a754aef3d161ec79373e9dc8c06c9f2410cd954e1334e0ec2b78146d4b7",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgTaskScheduler.cpp": "8ca1f330f1a2d88c3499bbb2a55d40cdc7c2344dc1abff7e3b0911f311a8cf09",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgText.cpp": "694036000fb74342fe1d33c4b72cc1c02f88e382dbe31a0849f863deee9a594d",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgWgCanvas.cpp": "117c57da8ced49549090f97958b9508a7331f0bb093533db8eed36cb634cdfce",
+    "boot/vendor/kshim/third_party/lvgl/src/libs/thorvg/tvgXmlParser.cpp": "7b07a39ea97438ce85ca45d6869017316acc873915554c88be9a11bbb039292a",
+    "boot/vendor/kshim/third_party/lvgl/src/others/fragment/README.md": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "boot/vendor/kshim/third_party/lvgl/src/others/vg_lite_tvg/vg_lite_tvg.cpp": "61d52bcf1586866a35cf9642e1e3de4dd126f58693887c49cecedd5a54694552",
+    "tools/build_atlas_font.py": "9d65a18ea295af04c8046842d3f11225be01f9b49ed652af07c5e55f05c565ab"
+  },
+  "test_log_sha256": {
+    "_build/atlas-ext4-tests.log": "b6b42580e8d662263472771a22f6a1e7c75470043a233eaed1730a7a08cc7924",
+    "_build/atlas-platform-test.log": "7dfe6a1694ef75587d259bfd7ab24654d845b3bec1a3fc370a7e3c476469a043",
+    "_build/atlas-menu-test.log": "2b35b3cc4e0f2b164ad06663854665475d509d2e0ba0fc0e716bc5b6a5e62343",
+    "_build/atlas-regression-tests.log": "6a41edc210cd971dee447a8efc2ea191273b38d92a847c04371ea8a6e97b0dd5",
+    "_build/atlas-reboot-stock-parse.log": "521fe6eb2293fef8ef714b47f9ea5cca379d8347c3860fb8a1994e95e3c27d46",
+    "_build/atlas-font-coverage.json": "5a717b4648e989d27d6220ce01e408961e5e92c21ce0fdea15cc2d332b8f0a45",
+    "_build/atlas-arm64-build.log": "cb0ff6c443d742a05ca65bbeec8bbcda7b5359e4583e73171e539be62eff678a"
+  },
+  "pending": "No persistence work; preserve v12 defaults and tablet /dev/sda. Charger UI remains deferred.",
+  "hardware_verification": {
+    "scope": "Linux/Android boot plus user report of no observed menu malfunction",
+    "source": "user report",
+    "evidence": "evidence/hardware-atlas-v12.json",
+    "ssh_boot_id_confirmed": true,
+    "ssh_boot_id": "kernel-copy-test-20261110"
+  },
+  "device_write_restriction": "User explicitly forbids modifying tablet /dev/sda and its partitions"
+}

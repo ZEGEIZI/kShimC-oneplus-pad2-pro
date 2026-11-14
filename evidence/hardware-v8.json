@@ -1,0 +1,39 @@
+{
+  "release": "7.2.6-opd2413-full-system03",
+  "boot_source": "ext4",
+  "system": "armadaos",
+  "version": "current-baseline-20261110",
+  "cmdline_sha256": "002e9775e9f26377235fb301b7f57d996736c42212f572f2530a75cc4c5093ad",
+  "uptime": "79.32",
+  "mounts": [
+    {
+      "target": "/",
+      "source": "composefs",
+      "fstype": "overlay",
+      "options": "ro,relatime,lowerdir+=/run/ostree/.private/cfsroot-lower,datadir+=/sysroot/ostree/repo/objects,redirect_dir=on,metacopy=on"
+    },
+    {
+      "target": "/sysroot",
+      "source": "/dev/sda17",
+      "fstype": "btrfs",
+      "options": "ro,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/root"
+    },
+    {
+      "target": "/boot",
+      "source": "/dev/sda16",
+      "fstype": "ext4",
+      "options": "ro,relatime"
+    }
+  ],
+  "candidate": "debug-v8",
+  "boot_sha256": "3aa47171d7ff245ac2a0744e4e4320ac8e83dd09d7ef7385c729c278023c745c",
+  "user_confirmed_linux_boot": true,
+  "read_only_ssh_verified": true,
+  "selected_cmdline_matches_export": true,
+  "ram_spec_gb": 16,
+  "external_linux_boot_verified": true,
+  "boot_partition_flashed": false,
+  "production_layout_verified": false,
+  "android_startup_partition_hashes_unchanged": true,
+  "modules_for_running_kernel_release_present": true
+}

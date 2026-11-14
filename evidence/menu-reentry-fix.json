@@ -1,0 +1,15 @@
+{
+  "candidate": "debug-v6",
+  "runtime_sha256": "75b5788f3be474892715f359e5f4ea1deea43df8c85376c02333551d789e6cb9",
+  "boot_sha256": "361835a3fd8d3b6289793c5a3f238cbdae06c8e908c9aa0aae55be784ca32937",
+  "cross_build_passed": true,
+  "runtime_slot_bytes": 4194304,
+  "host_tests_passed": [
+    "pad2pro_ext4_menu_keys_test: three menu sessions and latched fault",
+    "pad2pro_menu_keys_test: original key path",
+    "lvgl_test: held Power across three reopenings, navigation and selection"
+  ],
+  "historical_runtime_byte_identical": true,
+  "hardware_verified": false,
+  "device_action_after_manual_testing_request": false
+}

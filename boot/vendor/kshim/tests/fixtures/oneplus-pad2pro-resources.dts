@@ -1,0 +1,102 @@
+// SPDX-License-Identifier: MIT
+/* Minimal parsing fixture, NOT a bootable DTB. OPD2413_16.0.9.400(CN01),
+ * captured via /sys/firmware/devicetree/base on 2026-11-05.
+ * Only bus, PON/GPIO keys, splash reservation and SDE tables are retained.
+ * No user identifiers, panel commands or live register values are included.
+ */
+/dts-v1/;
+
+/ {
+    #address-cells = <0x00000002>;
+    #size-cells = <0x00000002>;
+    compatible = "qcom,sun-mtp", "qcom,sun", "qcom,sunp-mtp", "qcom,sunp", "qcom,mtp";
+    model = "Qualcomm Technologies, Inc. Sun MTP,erhai-O DVT";
+    chosen {
+        bootargs = "msm_drm.dsi_display0=qcom,mdss_dsi_panel_XN242_P_D_A0024_vid:PanelID-0x00C18000:";
+    };
+    soc {
+        #address-cells = <0x00000001>;
+        #size-cells = <0x00000001>;
+        compatible = "simple-bus";
+        phandle = <0x0000037f>;
+        ranges = <0x00000000 0x00000000 0x00000000 0xffffffff>;
+        qcom,spmi@c42d000 {
+            #address-cells = <0x00000002>;
+            #size-cells = <0x00000000>;
+            compatible = "qcom,spmi-pmic-arb";
+            phandle = <0x00000089>;
+            qcom,bus-id = <0x00000000>;
+            qcom,channel = <0x00000000>;
+            qcom,ee = <0x00000000>;
+            reg = <0x0c42d000 0x00004000 0x0c400000 0x00003000 0x0c500000 0x00400000 0x0c440000 0x00080000 0x0c4c0000 0x00010000>;
+            reg-names = "cnfg", "core", "chnls", "obsrvr", "intr";
+            qcom,pmk8550@0 {
+                #address-cells = <0x00000001>;
+                #size-cells = <0x00000000>;
+                compatible = "qcom,spmi-pmic";
+                phandle = <0x00000749>;
+                reg = <0x00000000 0x00000000>;
+                pon_hlos@1300 {
+                    compatible = "qcom,pm8998-pon";
+                    reg = <0x00001300 0x00000800>;
+                    reg-names = "pon_hlos", "pon_pbs";
+                    pwrkey {
+                        compatible = "qcom,pmk8350-pwrkey";
+                        linux,code = <0x00000074>;
+                    };
+                    resin {
+                        compatible = "qcom,pmk8350-resin";
+                        linux,code = <0x00000073>;
+                    };
+                };
+            };
+            qcom,pm8550@1 {
+                #address-cells = <0x00000001>;
+                #size-cells = <0x00000000>;
+                compatible = "qcom,spmi-pmic";
+                reg = <0x00000001 0x00000000>;
+                pinctrl@8800 {
+                    #gpio-cells = <0x00000002>;
+                    compatible = "qcom,pm8550-gpio";
+                    gpio-controller;
+                    phandle = <0x00000684>;
+                    reg = <0x00008800>;
+                };
+            };
+        };
+        gpio_keys {
+            compatible = "gpio-keys";
+            label = "gpio-keys";
+            vol_down {
+                gpios = <0x00000684 0x00000006 0x00000001>;
+                label = "volume_down";
+                linux,code = <0x00000072>;
+            };
+        };
+        qcom,mdss_mdp@ae00000 {
+            #address-cells = <0x00000001>;
+            #size-cells = <0x00000001>;
+            compatible = "qcom,sde-kms";
+            phandle = <0x0000083c>;
+            qcom,sde-ctl-off = <0x00016000 0x00017000 0x00018000 0x00019000 0x0001a000 0x0001b000>;
+            qcom,sde-mixer-blend-op-off = <0x00000040 0x00000070 0x000000a0 0x000000d0 0x00000100 0x00000130 0x00000160 0x00000190 0x000001c0 0x000001f0 0x00000220>;
+            qcom,sde-mixer-blendstages = <0x0000000b>;
+            qcom,sde-mixer-off = <0x00045000 0x00046000 0x00047000 0x00048000 0x00049000 0x0004a000 0x0004b000 0x0004c000 0x00000f0f 0x00000f0f 0x00000f0f 0x00000f0f>;
+            qcom,sde-sspp-off = <0x00005000 0x00007000 0x00009000 0x0000b000 0x00025000 0x00027000 0x00029000 0x0002b000 0x0002d000 0x0002f000>;
+            qcom,sde-sspp-type = "vig", "vig", "vig", "vig", "dma", "dma", "dma", "dma", "dma", "dma";
+            reg = <0x0ae00000 0x00093800 0x0aeb0000 0x00002008 0x0af80000 0x00007000 0x00400000 0x00002000 0x0af50000 0x00000128>;
+            reg-names = "mdp_phys", "vbif_phys", "regdma_phys", "ipcc_reg", "swfuse_phys";
+        };
+    };
+    reserved-memory {
+        #address-cells = <0x00000002>;
+        #size-cells = <0x00000002>;
+        phandle = <0x00000363>;
+        ranges;
+        splash_region {
+            label = "cont_splash_region";
+            phandle = <0x00000882>;
+            reg = <0x00000000 0xfc800000 0x00000000 0x02b00000>;
+        };
+    };
+};

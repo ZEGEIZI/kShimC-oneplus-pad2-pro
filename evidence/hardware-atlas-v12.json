@@ -1,0 +1,42 @@
+{
+  "reported_date": "2026-11-10",
+  "device": "OnePlus Pad 2 Pro OPD2413 (16 GB)",
+  "artifact": "artifacts/android-ext4-atlas-v12/boot.img",
+  "boot_sha256": "84a7ab284dc5ba0f141dc356dc93b1c3831b012135c70fbab921f032b0809e7d",
+  "method": "User manually ran fastboot boot; no flashing by agent",
+  "user_report": "Linux和安卓的启动均正常",
+  "linux_boot_verified": true,
+  "android_boot_verified": true,
+  "verification_source": "user report",
+  "ssh_verification": {
+    "status": "confirmed",
+    "address": "192.168.2.206",
+    "port": 22,
+    "boot_id_confirmed": true,
+    "chosen": {
+      "kshim,boot-source": "ext4",
+      "kshim,system-id": "armadaos",
+      "kshim,boot-id": "kernel-copy-test-20261110"
+    },
+    "kernel_release": "7.2.6-opd2413-full-system03",
+    "cmdline_sha256": "002e9775e9f26377235fb301b7f57d996736c42212f572f2530a75cc4c5093ad",
+    "boot_mount": {
+      "filesystems": [
+        {
+          "target": "/boot",
+          "source": "/dev/sda16",
+          "fstype": "ext4",
+          "options": "ro,relatime"
+        }
+      ]
+    },
+    "source": "evidence/persistence-device-inventory.json"
+  },
+  "not_yet_confirmed": [
+    "Individual power off/restart/Recovery/Fastboot/EDL operations; user reports no observed menu malfunction"
+  ],
+  "device_written_by_agent": false,
+  "menu_user_report": "已经回到Linux。目前启动菜单未发现功能不正常",
+  "persistence": "Not requested for now; preserve v12 defaults",
+  "device_write_restriction": "No modifications to tablet /dev/sda or any of its partitions"
+}

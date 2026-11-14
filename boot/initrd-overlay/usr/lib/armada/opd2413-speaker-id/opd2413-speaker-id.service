@@ -1,0 +1,12 @@
+[Unit]
+Description=OPD2413 temporary speaker chip identification
+DefaultDependencies=no
+After=systemd-udevd.service systemd-udev-trigger.service
+Before=sysinit.target
+ConditionPathExists=/run/opd2413-speaker-id/start-speaker-id.sh
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /run/opd2413-speaker-id/start-speaker-id.sh
+TimeoutStartSec=45
+RemainAfterExit=yes

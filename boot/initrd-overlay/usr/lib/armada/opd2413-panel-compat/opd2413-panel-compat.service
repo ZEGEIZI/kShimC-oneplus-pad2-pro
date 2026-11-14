@@ -1,0 +1,16 @@
+[Unit]
+Description=OPD2413 temporary Plasma Mobile panel compatibility
+DefaultDependencies=no
+After=local-fs.target
+Before=sysinit.target display-manager.service user@1000.service
+ConditionPathExists=/run/opd2413-panel-patch/Panel.qml
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sh /run/opd2413-panel-patch/apply-panel.sh
+PrivateMounts=no
+RemainAfterExit=yes
+TimeoutStartSec=15s
+
+[Install]
+WantedBy=sysinit.target

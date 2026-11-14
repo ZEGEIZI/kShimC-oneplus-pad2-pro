@@ -1,0 +1,19 @@
+{
+  "date_local": "2026-11-10",
+  "candidate": "debug-v5",
+  "boot_sha256": "f5625dbad6cc4df765efccbcd016e1b6dcd6f50980073b089c68841dfceb0b6a",
+  "temporary_fastboot_boot": true,
+  "boot_partition_flashed": false,
+  "user_observation": "Selecting Linux (ext4 /boot) opens the submenu at Android / return. Keys do not respond; timeout returns to parent, whose keys also do not respond.",
+  "confirmed_by_menu_control_flow": [
+    "OnePlus UFS READ(10) path",
+    "unique GPT boot partition lookup across declared LUNs",
+    "read-only ext4 mount",
+    "boot.conf parsing",
+    "external catalog menu construction"
+  ],
+  "external_payload_sha256_verified_on_hardware": false,
+  "external_linux_boot_verified": false,
+  "cause_found_in_source": "Repeated start_menu resets the proven key backend and reruns the boot-entry gate, which rejects the SPMI controller after its first successful initialization.",
+  "fix_under_test": "Retain the initially proven backend and debounce state for the same FDT/resources across menu sessions; retain fault latches."
+}

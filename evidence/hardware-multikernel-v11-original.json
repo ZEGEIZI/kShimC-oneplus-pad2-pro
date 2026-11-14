@@ -1,0 +1,32 @@
+{
+  "release": "7.2.6-opd2413-full-system03",
+  "source": "ext4",
+  "system": "armadaos",
+  "version": "current-baseline-20261110",
+  "cmdline_sha256": "002e9775e9f26377235fb301b7f57d996736c42212f572f2530a75cc4c5093ad",
+  "modules_present": true,
+  "mounts": {
+    "/boot": [
+      {
+        "target": "/boot",
+        "source": "/dev/sda16",
+        "fstype": "ext4",
+        "options": "ro,relatime",
+        "partuuid": "d4d95497-250b-4023-98eb-a8977664e385"
+      }
+    ],
+    "/sysroot": [
+      {
+        "target": "/sysroot",
+        "source": "/dev/sda17[/root]",
+        "fstype": "btrfs",
+        "options": "ro,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/root",
+        "partuuid": "3b3612f8-b9d2-4857-9794-53ea99f63c8c"
+      }
+    ]
+  },
+  "candidate": "android-ext4-multikernel-v11",
+  "owner_confirmed": true,
+  "read_only_ssh_verified": true,
+  "boot_partition_flashed": false
+}

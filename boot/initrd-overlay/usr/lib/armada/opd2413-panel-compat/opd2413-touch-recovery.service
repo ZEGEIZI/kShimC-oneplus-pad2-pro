@@ -1,0 +1,18 @@
+[Unit]
+Description=Restore the OPD2413 touchscreen desktop preference
+DefaultDependencies=no
+RequiresMountsFor=/var/home/armada
+After=local-fs.target
+Before=sysinit.target display-manager.service user@1000.service
+ConditionPathExists=/run/opd2413-touch-recovery/recover-touch.sh
+
+[Service]
+Type=oneshot
+User=armada
+Group=armada
+ExecStart=/usr/bin/sh /run/opd2413-touch-recovery/recover-touch.sh
+RemainAfterExit=yes
+TimeoutStartSec=15s
+
+[Install]
+WantedBy=sysinit.target

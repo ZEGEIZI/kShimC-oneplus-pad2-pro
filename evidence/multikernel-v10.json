@@ -1,0 +1,61 @@
+{
+  "candidate": "android-ext4-multikernel-v10",
+  "boot_sha256": "426353d041741fccb9f4bac7f00649c370921b1a138b1905d664366e921312cb",
+  "runtime_sha256": "43ee0fbd68f6f45d09660cf43e19763bec1bcccd762da8844a0c8125720b5069",
+  "systems_max": 4,
+  "kernels_per_system_max": 8,
+  "entries_formats_supported": [
+    1,
+    2
+  ],
+  "tests": {
+    "integration_cases": 22,
+    "native_ufs_cases": 15,
+    "synthetic_payload_catalog_entries": 32,
+    "menu_state_machine_sanitizers": true,
+    "real_armada_payload_legacy_config": {
+      "status": 0,
+      "entries": 1,
+      "block_reads": 18434,
+      "catalog": [
+        {
+          "system": "armadaos",
+          "version": "current-baseline-20261110",
+          "release": "7.2.6-opd2413-full-system03",
+          "current": 1,
+          "previous": 0,
+          "payload_status": 0
+        }
+      ]
+    },
+    "runtime_chooser_ext4_payload_selections": 32,
+    "actual_selected_payload_hashes_and_full_cmdlines_verified": true,
+    "healthy_selection_with_unselected_bad_manifest_verified": true
+  },
+  "tests_log_sha256": "02f8e8a3833fd467756fdaefed37cd47a0c3c231925c6aa9c3199cf735a43333",
+  "source_sha256": {
+    "boot/vendor/kshim/src/include/ext4_boot.h": "56f72a17641b1d55d7b210df9cd9fbb4795268f81ece804962a1c641dd6956c5",
+    "boot/vendor/kshim/src/include/boot_files_menu.h": "3b59aa24dbf21821e15ea3e29b5caa3f71cf86c70f00f362feaadcf8d431bf5e",
+    "boot/vendor/kshim/src/core/boot_files_config.c": "651b38b478724e3f8b17fa301523aa1e74b6a4bc706e260646549127be3a6525",
+    "boot/vendor/kshim/src/core/boot_files_menu.c": "91316c85afc87b0a769ee1e14b44181b98fbdfdc8defdd38655075eb9f6968eb",
+    "boot/vendor/kshim/src/arch/arm64/boot_files_native.c": "0f836f8e031d15f15a7a3dea3dd53235390a8fd57d7ea71f656f08ae44ff4bb7",
+    "tools/boot_files.py": "6865ca209bbcacc5cd8c1ff5dc51e523ae01e92553a298722db980769250dc63",
+    "tools/check_boot_files.c": "4d7fe706316192537fe0c0b5fd88edc4afe8735138e8393c7c6ebc7152cd64f5",
+    "tools/build_host_checks.py": "ca8c47d938e9742913bfb6cbc06611f5141a7b795e47f3f39d139728f7d60d0d",
+    "tests/test_boot_files.py": "d5ce876515f3dd5e786fd2053a579a912554dc51db12953e982b5a3a2398805e",
+    "tests/boot_files_menu_test.c": "a40c93a13940df2ad951399cdf0afc5333db981a06b20a318bde2829505384f7"
+  },
+  "hardware_verified": false,
+  "second_real_kernel_available": false,
+  "device_boot_config_modified": true,
+  "boot_partition_flashed": false,
+  "pending": "Owner manually boots the copy and original entries with v10; read-only SSH must confirm their distinct chosen boot IDs",
+  "same_kernel_copy_published": true,
+  "hardware_checks": {
+    "owner_confirmed_menu_and_back_navigation": true,
+    "owner_confirmed_original_kernel_startup": true,
+    "ssh_original_boot_id": "current-baseline-20261110",
+    "copy_boot_verified": false,
+    "switch_back_verified": false
+  }
+}

@@ -1,0 +1,15 @@
+NAME="Armada"
+ID=armada
+ID_LIKE="fedora"
+VERSION_ID="44"
+BUILD_ID="20261107.937d88a.opd2413.local"
+DEFAULT_HOSTNAME=armada
+IMAGE_ID=armada
+IMAGE_VERSION="20261107.937d88a.opd2413.local"
+HOME_URL="https://armadaos.dev/"
+DOCUMENTATION_URL="https://armadaos.dev/"
+SUPPORT_URL="https://armadaos.dev/troubleshooting/frequently-asked-questions/"
+BUG_REPORT_URL="https://github.com/armada-os/armada/issues"
+VERSION="20261107.937d88a.opd2413.local dracut-108-8.fc44"
+PRETTY_NAME="Armada 20261107.937d88a.opd2413.local dracut-108-8.fc44 (Initramfs)"
+DRACUT_VERSION="108-8.fc44"

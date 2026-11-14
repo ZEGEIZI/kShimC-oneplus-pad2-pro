@@ -1,0 +1,1450 @@
+{
+  "date": "2026-11-10",
+  "kernel_release": "7.2.6-opd2413-full-system03",
+  "chosen": {
+    "kshim,boot-source": "ext4",
+    "kshim,system-id": "armadaos",
+    "kshim,boot-id": "kernel-copy-test-20261110"
+  },
+  "cmdline_sha256": "002e9775e9f26377235fb301b7f57d996736c42212f572f2530a75cc4c5093ad",
+  "mounts": {
+    "filesystems": [
+      {
+        "target": "/boot",
+        "source": "/dev/sda16",
+        "fstype": "ext4",
+        "options": "ro,relatime"
+      }
+    ]
+  },
+  "disks": [
+    {
+      "path": "/dev/sda",
+      "block_size": 4096,
+      "bytes": 508710354944,
+      "first_usable_lba": 6,
+      "last_usable_lba": 124196858,
+      "header_crc_valid": true,
+      "table_crc_valid": true,
+      "partitions": [
+        {
+          "number": 1,
+          "name": "ssd",
+          "partuuid": "bb4a011e-3cdb-1d35-cc0a-8ef1f0c76adb",
+          "type_uuid": "2c86e742-745e-4fdd-bfd8-b6a7ac638772",
+          "first_lba": 6,
+          "last_lba": 7,
+          "bytes": 8192,
+          "attrs": 0
+        },
+        {
+          "number": 2,
+          "name": "persist",
+          "partuuid": "95c0089b-e195-6d97-b07f-c88c77396b1b",
+          "type_uuid": "6c95e238-e343-4ba8-b489-8681ed22ad0b",
+          "first_lba": 8,
+          "last_lba": 16391,
+          "bytes": 67108864,
+          "attrs": 0
+        },
+        {
+          "number": 3,
+          "name": "misc",
+          "partuuid": "93adea22-36c9-e52c-440f-e9d2209f6164",
+          "type_uuid": "82acc91f-357c-4a68-9c8f-689e1b1a23a1",
+          "first_lba": 16392,
+          "last_lba": 16647,
+          "bytes": 1048576,
+          "attrs": 0
+        },
+        {
+          "number": 4,
+          "name": "keystore",
+          "partuuid": "d12c5c7a-b535-40f9-32cf-3e1e53df9a12",
+          "type_uuid": "de7d4029-0f5b-41c8-ae7e-f6c023a02b33",
+          "first_lba": 16648,
+          "last_lba": 16775,
+          "bytes": 524288,
+          "attrs": 0
+        },
+        {
+          "number": 5,
+          "name": "frp",
+          "partuuid": "419bc318-16d5-351b-3b09-53aad834ab4b",
+          "type_uuid": "91b72d4d-71e0-4cbf-9b8e-236381cff17a",
+          "first_lba": 16776,
+          "last_lba": 16903,
+          "bytes": 524288,
+          "attrs": 0
+        },
+        {
+          "number": 6,
+          "name": "vbmeta_system_a",
+          "partuuid": "0a0db1a7-297c-da0b-8633-e6b788ab84e1",
+          "type_uuid": "1344859d-3a6a-4c14-a316-9e696b3a5400",
+          "first_lba": 16904,
+          "last_lba": 16919,
+          "bytes": 65536,
+          "attrs": 1154047404513689600
+        },
+        {
+          "number": 7,
+          "name": "vbmeta_system_b",
+          "partuuid": "666bd67d-0e4e-008f-aa28-e0d02d697e07",
+          "type_uuid": "fe3ab853-5b66-4d4a-bf85-8d90af1c2c4a",
+          "first_lba": 16920,
+          "last_lba": 16935,
+          "bytes": 65536,
+          "attrs": 1152921504606846976
+        },
+        {
+          "number": 8,
+          "name": "vbmeta_vendor_a",
+          "partuuid": "3eaf0a4f-3cca-41c8-c66f-d2c62206a94e",
+          "type_uuid": "5a33b410-cd1f-4987-a6f3-1e6282a671d1",
+          "first_lba": 16936,
+          "last_lba": 16951,
+          "bytes": 65536,
+          "attrs": 1125899906842624
+        },
+        {
+          "number": 9,
+          "name": "vbmeta_vendor_b",
+          "partuuid": "087f4512-65a6-8aea-deaa-0a88f75049d6",
+          "type_uuid": "fe3ab853-5b66-4d4a-bf85-8d90af1c2c4a",
+          "first_lba": 16952,
+          "last_lba": 16967,
+          "bytes": 65536,
+          "attrs": 0
+        },
+        {
+          "number": 10,
+          "name": "metadata",
+          "partuuid": "c613b76f-4c5b-fc9f-8f81-89b315019b00",
+          "type_uuid": "988a98c9-2910-4123-aaec-1cf6b1bc28f9",
+          "first_lba": 16968,
+          "last_lba": 33351,
+          "bytes": 67108864,
+          "attrs": 0
+        },
+        {
+          "number": 11,
+          "name": "rawdump",
+          "partuuid": "03b0069a-e73f-dcb1-79b4-bea17c2b6359",
+          "type_uuid": "66c9b323-f7fc-48b6-bf96-6f32e335a428",
+          "first_lba": 33352,
+          "last_lba": 98887,
+          "bytes": 268435456,
+          "attrs": 0
+        },
+        {
+          "number": 12,
+          "name": "splash_odm",
+          "partuuid": "2672eaf7-b228-d76c-34aa-6bc950ace937",
+          "type_uuid": "0f067530-c185-41b8-ae6e-81fb2c3dd282",
+          "first_lba": 98888,
+          "last_lba": 107243,
+          "bytes": 34226176,
+          "attrs": 0
+        },
+        {
+          "number": 13,
+          "name": "hybridswap",
+          "partuuid": "0a4c3ce5-0735-8e8f-bf3b-669bc9790c1c",
+          "type_uuid": "19bd2752-dbde-477e-ab4e-4e5f8246ffc1",
+          "first_lba": 107244,
+          "last_lba": 369387,
+          "bytes": 1073741824,
+          "attrs": 0
+        },
+        {
+          "number": 14,
+          "name": "super",
+          "partuuid": "dfce833f-596c-9b06-d46f-482c0835404f",
+          "type_uuid": "89a12de1-5e41-4cb3-8b4c-b1441eb5da38",
+          "first_lba": 369388,
+          "last_lba": 3617585,
+          "bytes": 13304619008,
+          "attrs": 0
+        },
+        {
+          "number": 15,
+          "name": "userdata",
+          "partuuid": "43a49074-240d-35f2-d470-c8f68584ba89",
+          "type_uuid": "1b81e7e6-f50d-419b-a739-2aeef8da3335",
+          "first_lba": 3617586,
+          "last_lba": 90642175,
+          "bytes": 356452720640,
+          "attrs": 0
+        },
+        {
+          "number": 16,
+          "name": "ARMADA_BOOT",
+          "partuuid": "d4d95497-250b-4023-98eb-a8977664e385",
+          "type_uuid": "0fc63daf-8483-4772-8e79-3d69d8477de4",
+          "first_lba": 90642176,
+          "last_lba": 90904319,
+          "bytes": 1073741824,
+          "attrs": 0
+        },
+        {
+          "number": 17,
+          "name": "ARMADA_ROOT",
+          "partuuid": "3b3612f8-b9d2-4857-9794-53ea99f63c8c",
+          "type_uuid": "0fc63daf-8483-4772-8e79-3d69d8477de4",
+          "first_lba": 90904320,
+          "last_lba": 124196607,
+          "bytes": 136365211648,
+          "attrs": 0
+        }
+      ],
+      "unallocated": [
+        {
+          "first_lba": 124196608,
+          "last_lba": 124196858,
+          "bytes": 1028096
+        }
+      ]
+    },
+    {
+      "path": "/dev/sdb",
+      "block_size": 4096,
+      "bytes": 8388608,
+      "first_usable_lba": 6,
+      "last_usable_lba": 2042,
+      "header_crc_valid": true,
+      "table_crc_valid": true,
+      "partitions": [
+        {
+          "number": 1,
+          "name": "xbl_a",
+          "partuuid": "dd1611c8-acba-5d8c-9f06-94288abbbc92",
+          "type_uuid": "dea0ba2c-cbdd-4805-b4f9-f428251c3e98",
+          "first_lba": 6,
+          "last_lba": 901,
+          "bytes": 3670016,
+          "attrs": 1208090600042135552
+        },
+        {
+          "number": 2,
+          "name": "xbl_config_a",
+          "partuuid": "ddacc799-9533-6150-9fe3-d032e32366cf",
+          "type_uuid": "5a325ae4-4276-b66d-0add-3494df27706a",
+          "first_lba": 902,
+          "last_lba": 1001,
+          "bytes": 409600,
+          "attrs": 55169095435288576
+        },
+        {
+          "number": 3,
+          "name": "multiimgqti_a",
+          "partuuid": "4202e00f-9a39-0382-605a-8e42604674e8",
+          "type_uuid": "846c6f05-eb46-4c0a-a1a3-3648ef3f9d0e",
+          "first_lba": 1002,
+          "last_lba": 1009,
+          "bytes": 32768,
+          "attrs": 1208090600042135552
+        },
+        {
+          "number": 4,
+          "name": "multiimgoem_a",
+          "partuuid": "118fe481-1fb9-45a2-85d9-14e173829b04",
+          "type_uuid": "e126a436-757e-42d0-8d19-0f362f7a62b8",
+          "first_lba": 1010,
+          "last_lba": 1017,
+          "bytes": 32768,
+          "attrs": 1208090600042135552
+        },
+        {
+          "number": 5,
+          "name": "apdp",
+          "partuuid": "1ac33c54-3906-7f63-26c4-d66187eba5b8",
+          "type_uuid": "e6e98da2-e22a-4d12-ab33-169e7deaa507",
+          "first_lba": 1018,
+          "last_lba": 1081,
+          "bytes": 262144,
+          "attrs": 0
+        },
+        {
+          "number": 6,
+          "name": "last_parti",
+          "partuuid": "72b792d7-603d-ca3b-29a1-11c119e65c15",
+          "type_uuid": "47c35e20-4268-449a-aec7-d309109dcf70",
+          "first_lba": 1082,
+          "last_lba": 2042,
+          "bytes": 3936256,
+          "attrs": 1152921504606846976
+        }
+      ],
+      "unallocated": []
+    },
+    {
+      "path": "/dev/sdc",
+      "block_size": 4096,
+      "bytes": 8388608,
+      "first_usable_lba": 6,
+      "last_usable_lba": 2042,
+      "header_crc_valid": true,
+      "table_crc_valid": true,
+      "partitions": [
+        {
+          "number": 1,
+          "name": "xbl_b",
+          "partuuid": "2eb09243-6977-0088-34c4-7c77399824f7",
+          "type_uuid": "dea0ba2c-cbdd-4805-b4f9-f428251c3e98",
+          "first_lba": 6,
+          "last_lba": 901,
+          "bytes": 3670016,
+          "attrs": 1206964700135292928
+        },
+        {
+          "number": 2,
+          "name": "xbl_config_b",
+          "partuuid": "a0e978ec-1184-6ae1-f4e3-32b4060d565c",
+          "type_uuid": "5a325ae4-4276-b66d-0add-3494df27706a",
+          "first_lba": 902,
+          "last_lba": 1001,
+          "bytes": 409600,
+          "attrs": 54043195528445952
+        },
+        {
+          "number": 3,
+          "name": "multiimgqti_b",
+          "partuuid": "1defc20e-8072-6659-dad2-fe298f428ec9",
+          "type_uuid": "846c6f05-eb46-4c0a-a1a3-3648ef3f9d0e",
+          "first_lba": 1002,
+          "last_lba": 1009,
+          "bytes": 32768,
+          "attrs": 1206964700135292928
+        },
+        {
+          "number": 4,
+          "name": "multiimgoem_b",
+          "partuuid": "b4c0e2bd-898c-2c21-c557-b93795c14237",
+          "type_uuid": "e126a436-757e-42d0-8d19-0f362f7a62b8",
+          "first_lba": 1010,
+          "last_lba": 1017,
+          "bytes": 32768,
+          "attrs": 1206964700135292928
+        },
+        {
+          "number": 5,
+          "name": "apdpb",
+          "partuuid": "7684a390-564f-c365-f187-b5538d7734b4",
+          "type_uuid": "e6e98da2-e22a-4d12-ab33-169e7deaa507",
+          "first_lba": 1018,
+          "last_lba": 1081,
+          "bytes": 262144,
+          "attrs": 0
+        },
+        {
+          "number": 6,
+          "name": "last_parti",
+          "partuuid": "74054b8f-579b-f55c-5154-55f0cd89ec77",
+          "type_uuid": "2d804b33-cc29-4986-9c81-8265d36c83f4",
+          "first_lba": 1082,
+          "last_lba": 2042,
+          "bytes": 3936256,
+          "attrs": 1152921504606846976
+        }
+      ],
+      "unallocated": []
+    },
+    {
+      "path": "/dev/sdd",
+      "block_size": 4096,
+      "bytes": 2600468480,
+      "first_usable_lba": 6,
+      "last_usable_lba": 634874,
+      "header_crc_valid": true,
+      "table_crc_valid": true,
+      "partitions": [
+        {
+          "number": 1,
+          "name": "uefi_a",
+          "partuuid": "afa90997-0d16-5075-bbbb-ed48b97c21d5",
+          "type_uuid": "400ffdcd-22e0-47e7-9a23-f16ed9382388",
+          "first_lba": 6,
+          "last_lba": 1285,
+          "bytes": 5242880,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 2,
+          "name": "aop_a",
+          "partuuid": "42c6a061-f61f-43c6-3fca-11de8c5140cc",
+          "type_uuid": "d69e90a5-4cab-0071-f6df-ab977f141a7f",
+          "first_lba": 1286,
+          "last_lba": 1413,
+          "bytes": 524288,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 3,
+          "name": "aop_config_a",
+          "partuuid": "8f905300-68c8-308c-29cc-f400a6cbb2d6",
+          "type_uuid": "3d12f234-c882-4b46-a20c-17d52c8fc03d",
+          "first_lba": 1414,
+          "last_lba": 1541,
+          "bytes": 524288,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 4,
+          "name": "tz_a",
+          "partuuid": "5d3c82f3-5b5f-0c36-21e9-2261c816510c",
+          "type_uuid": "a053aa7f-40b8-4b1c-ba08-2f68ac71a4f4",
+          "first_lba": 1542,
+          "last_lba": 2821,
+          "bytes": 5242880,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 5,
+          "name": "hyp_a",
+          "partuuid": "88145203-a900-df30-c588-7483c826384c",
+          "type_uuid": "e1a6a689-0c8d-4cc6-b4e8-55a4320fbd8a",
+          "first_lba": 2822,
+          "last_lba": 4869,
+          "bytes": 8388608,
+          "attrs": 35747322042253312
+        },
+        {
+          "number": 6,
+          "name": "modem_a",
+          "partuuid": "77703ce0-e3bf-7b72-0293-9e9a376a74f5",
+          "type_uuid": "ebd0a0a2-b9e5-4433-87c0-68b6b72699c7",
+          "first_lba": 4870,
+          "last_lba": 94469,
+          "bytes": 367001600,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 7,
+          "name": "bluetooth_a",
+          "partuuid": "0b9d48b1-5da5-d05f-f441-bfaddcae906b",
+          "type_uuid": "6cb747f1-c2ef-4092-add0-ca39f79c7af4",
+          "first_lba": 94470,
+          "last_lba": 97541,
+          "bytes": 12582912,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 8,
+          "name": "abl_a",
+          "partuuid": "4510232b-10aa-25cd-9249-b432eef32eb2",
+          "type_uuid": "bd6928a1-4ce0-a038-4f3a-1495e3eddffb",
+          "first_lba": 97542,
+          "last_lba": 97797,
+          "bytes": 1048576,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 9,
+          "name": "dsp_a",
+          "partuuid": "345745fd-99c6-70a8-eb4f-212a95d00418",
+          "type_uuid": "7efe5010-2a1a-4a1a-b8bc-990257813512",
+          "first_lba": 97798,
+          "last_lba": 114181,
+          "bytes": 67108864,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 10,
+          "name": "keymaster_a",
+          "partuuid": "3c973305-c45b-504e-4b8d-67b3eecd69a2",
+          "type_uuid": "a11d2a7c-d82a-4c2f-8a01-1805240e6626",
+          "first_lba": 114182,
+          "last_lba": 114309,
+          "bytes": 524288,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 11,
+          "name": "spuservice_a",
+          "partuuid": "1bb00fbb-e866-7612-d343-8538da0d004e",
+          "type_uuid": "7184c01f-26d7-409f-8a49-eae8ec949a7c",
+          "first_lba": 114310,
+          "last_lba": 114341,
+          "bytes": 131072,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 12,
+          "name": "boot_a",
+          "partuuid": "db260041-d52c-5170-ccab-05eb50e8e640",
+          "type_uuid": "20117f86-e985-4357-b9ee-374bc1d8487d",
+          "first_lba": 114342,
+          "last_lba": 138917,
+          "bytes": 100663296,
+          "attrs": 31243722414882816
+        },
+        {
+          "number": 13,
+          "name": "devcfg_a",
+          "partuuid": "690e922e-c22d-c6be-9526-32564e30b151",
+          "type_uuid": "f65d4b16-343d-4e25-aafc-be99b6556a6d",
+          "first_lba": 138918,
+          "last_lba": 138949,
+          "bytes": 131072,
+          "attrs": 35747322042253312
+        },
+        {
+          "number": 14,
+          "name": "qupfw_a",
+          "partuuid": "9800b60c-9709-5bdd-22f8-9af4bb06cca4",
+          "type_uuid": "21d1219f-2ed1-4ab4-930a-41a16ae75f7f",
+          "first_lba": 138950,
+          "last_lba": 138969,
+          "bytes": 81920,
+          "attrs": 35747322042253312
+        },
+        {
+          "number": 15,
+          "name": "vbmeta_a",
+          "partuuid": "c2b7f363-bc67-ed17-d624-35cfe159e175",
+          "type_uuid": "4b7a15d6-322c-42ac-8110-88b7da0c5d77",
+          "first_lba": 138970,
+          "last_lba": 138985,
+          "bytes": 65536,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 16,
+          "name": "dtbo_a",
+          "partuuid": "41919da1-cc76-67ad-fe94-eba5812ff9bb",
+          "type_uuid": "24d0d418-d31d-4d8d-ac2c-4d4305188450",
+          "first_lba": 138986,
+          "last_lba": 145129,
+          "bytes": 25165824,
+          "attrs": 35747322042253312
+        },
+        {
+          "number": 17,
+          "name": "uefisecapp_a",
+          "partuuid": "184c4d23-0569-3fc6-3960-da846722c293",
+          "type_uuid": "be8a7e08-1b7a-4cae-993a-d5b7fb55b3c2",
+          "first_lba": 145130,
+          "last_lba": 145641,
+          "bytes": 2097152,
+          "attrs": 35747322042253312
+        },
+        {
+          "number": 18,
+          "name": "imagefv_a",
+          "partuuid": "745c9ae0-8919-9e2e-d00c-381803c7f047",
+          "type_uuid": "17911177-c9e6-4372-933c-804b678e666f",
+          "first_lba": 145642,
+          "last_lba": 146153,
+          "bytes": 2097152,
+          "attrs": 35747322042253313
+        },
+        {
+          "number": 19,
+          "name": "shrm_a",
+          "partuuid": "1e23e297-6a57-0b96-2f25-fd14bf9e3f68",
+          "type_uuid": "cb74ca22-2f0d-4b82-a1d6-c4213f348d73",
+          "first_lba": 146154,
+          "last_lba": 146217,
+          "bytes": 262144,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 20,
+          "name": "vm-bootsys_a",
+          "partuuid": "2ec23b35-9bc8-b4aa-b88c-0006ac03c5fb",
+          "type_uuid": "7b034c58-8afc-4974-9444-b03fbee85236",
+          "first_lba": 146218,
+          "last_lba": 223017,
+          "bytes": 314572800,
+          "attrs": 35747322042253312
+        },
+        {
+          "number": 21,
+          "name": "cpucp_a",
+          "partuuid": "ae8c265a-82d0-b7a4-2550-fdb5cdeab2c4",
+          "type_uuid": "1e8615bd-6d8c-41ad-b3ea-50e8bf40e43f",
+          "first_lba": 223018,
+          "last_lba": 223273,
+          "bytes": 1048576,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 22,
+          "name": "featenabler_a",
+          "partuuid": "11a37f90-d5cf-ea34-ebb5-b0cf4d4564a0",
+          "type_uuid": "741813d2-8c87-4465-8c69-032c771ccce7",
+          "first_lba": 223274,
+          "last_lba": 223305,
+          "bytes": 131072,
+          "attrs": 35747322042253312
+        },
+        {
+          "number": 23,
+          "name": "vendor_boot_a",
+          "partuuid": "81afc3ea-bd10-46ef-fc8d-10cb7a78be5f",
+          "type_uuid": "6d286a7f-9f1e-46b3-acf4-96a0591fe66f",
+          "first_lba": 223306,
+          "last_lba": 247881,
+          "bytes": 100663296,
+          "attrs": 35747322042253312
+        },
+        {
+          "number": 24,
+          "name": "qmcs",
+          "partuuid": "9e842520-94b4-8e57-3622-7eec6d60f5a8",
+          "type_uuid": "358740b1-34bd-4e4c-9656-3454f0a8fdd9",
+          "first_lba": 247882,
+          "last_lba": 255561,
+          "bytes": 31457280,
+          "attrs": 0
+        },
+        {
+          "number": 25,
+          "name": "qweslicstore_a",
+          "partuuid": "14cb6180-7feb-a57c-ed64-17e08579cafb",
+          "type_uuid": "7bab3c93-5f73-4d02-b8cb-5b9f899d29a8",
+          "first_lba": 255562,
+          "last_lba": 255625,
+          "bytes": 262144,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 26,
+          "name": "oplus_sec_a",
+          "partuuid": "f5cfa743-8fc3-37a0-ab77-425e61dfe7f2",
+          "type_uuid": "e11dda6a-651b-4ab4-b8c5-30b352b472e2",
+          "first_lba": 255626,
+          "last_lba": 258185,
+          "bytes": 10485760,
+          "attrs": 1125899906842624
+        },
+        {
+          "number": 27,
+          "name": "recovery_a",
+          "partuuid": "99dbefde-bc44-d4ec-a181-4044a9267b36",
+          "type_uuid": "d504d6db-fa92-4853-b59e-c7f292e2ea19",
+          "first_lba": 258186,
+          "last_lba": 283785,
+          "bytes": 104857600,
+          "attrs": 35747322042253312
+        },
+        {
+          "number": 28,
+          "name": "splash_a",
+          "partuuid": "1d3a0ddd-df0b-b328-e9bd-107d447b3641",
+          "type_uuid": "ad99f201-dc71-4e30-9630-e19eef553d1b",
+          "first_lba": 283786,
+          "last_lba": 292141,
+          "bytes": 34226176,
+          "attrs": 1125899906842624
+        },
+        {
+          "number": 29,
+          "name": "xbl_ramdump_a",
+          "partuuid": "673e3325-ef3f-bd26-8cdb-46331401178a",
+          "type_uuid": "0382f197-e41f-4e84-b18b-0b564aead875",
+          "first_lba": 292142,
+          "last_lba": 292653,
+          "bytes": 2097152,
+          "attrs": 35747322042253312
+        },
+        {
+          "number": 30,
+          "name": "init_boot_a",
+          "partuuid": "91dccf30-3b06-478d-00de-3718382867b6",
+          "type_uuid": "e5b0f3f7-6606-43da-bce1-84dc0a239ddd",
+          "first_lba": 292654,
+          "last_lba": 294701,
+          "bytes": 8388608,
+          "attrs": 35747322042253312
+        },
+        {
+          "number": 31,
+          "name": "cpucp_dtb_a",
+          "partuuid": "d3e45cff-1e4a-3dd2-cbf7-05bed4ff42a7",
+          "type_uuid": "6c6018bc-4fbe-40c5-b148-4bcb1db23748",
+          "first_lba": 294702,
+          "last_lba": 294717,
+          "bytes": 65536,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 32,
+          "name": "pvmfw_a",
+          "partuuid": "43daa024-b763-7468-db4b-269ddc253658",
+          "type_uuid": "f26e5b94-3eec-489e-bdda-0ffe33ab82a8",
+          "first_lba": 294718,
+          "last_lba": 294973,
+          "bytes": 1048576,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 33,
+          "name": "soccp_debug_a",
+          "partuuid": "6724c9c2-99e2-983d-812c-d0cb362b4d3a",
+          "type_uuid": "95825ee7-01dd-4a7c-a9ee-8c37b997fec4",
+          "first_lba": 294974,
+          "last_lba": 295101,
+          "bytes": 524288,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 34,
+          "name": "soccp_dcd_a",
+          "partuuid": "06b8d0a4-3d04-6bf0-d28c-6a14cde10956",
+          "type_uuid": "d67cc91f-b88a-43fa-9b3a-12ef5a1892dc",
+          "first_lba": 295102,
+          "last_lba": 295107,
+          "bytes": 24576,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 35,
+          "name": "pdp_a",
+          "partuuid": "652ce9e1-b49d-0dfe-b282-8ac685bef3f0",
+          "type_uuid": "4d65ef4c-6b68-4563-80b5-2b079a9e649b",
+          "first_lba": 295108,
+          "last_lba": 295171,
+          "bytes": 262144,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 36,
+          "name": "pdp_cdb_a",
+          "partuuid": "3a5bc4ca-c157-303f-a547-e53af1f3cc06",
+          "type_uuid": "39f567c2-cbaa-4378-a88a-f1912512ce10",
+          "first_lba": 295172,
+          "last_lba": 295203,
+          "bytes": 131072,
+          "attrs": 1188668826649100288
+        },
+        {
+          "number": 37,
+          "name": "uefi_b",
+          "partuuid": "0062337e-faf0-2948-f07d-eb888c6b451c",
+          "type_uuid": "9f234b5b-0efb-4313-8e4c-0af1f605536b",
+          "first_lba": 295204,
+          "last_lba": 296483,
+          "bytes": 5242880,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 38,
+          "name": "aop_b",
+          "partuuid": "3e718129-d891-f516-b964-49facfc9ae54",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 296484,
+          "last_lba": 296611,
+          "bytes": 524288,
+          "attrs": 70650219154374656
+        },
+        {
+          "number": 39,
+          "name": "aop_config_b",
+          "partuuid": "80ca03e1-aef8-bb81-8dfe-e11b7abceeb3",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 296612,
+          "last_lba": 296739,
+          "bytes": 524288,
+          "attrs": 70650219154374656
+        },
+        {
+          "number": 40,
+          "name": "tz_b",
+          "partuuid": "58b9e7d9-8304-c7bd-19e4-e4501d48edc8",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 296740,
+          "last_lba": 298019,
+          "bytes": 5242880,
+          "attrs": 70650219154374656
+        },
+        {
+          "number": 41,
+          "name": "hyp_b",
+          "partuuid": "831cc20d-907f-8b05-d976-5f4938d58781",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 298020,
+          "last_lba": 300067,
+          "bytes": 8388608,
+          "attrs": 70650219154374656
+        },
+        {
+          "number": 42,
+          "name": "modem_b",
+          "partuuid": "fda16727-c6ba-bcbf-3d83-bdc35c79f6c8",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 300068,
+          "last_lba": 389667,
+          "bytes": 367001600,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 43,
+          "name": "bluetooth_b",
+          "partuuid": "3f4f3c53-f968-2915-2b88-99c11d5de908",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 389668,
+          "last_lba": 392739,
+          "bytes": 12582912,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 44,
+          "name": "abl_b",
+          "partuuid": "7e1747c0-7079-083a-9466-e46b2bac81b8",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 392740,
+          "last_lba": 392995,
+          "bytes": 1048576,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 45,
+          "name": "dsp_b",
+          "partuuid": "5aa2f557-c970-1e11-d18f-20d4e58f97f5",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 392996,
+          "last_lba": 409379,
+          "bytes": 67108864,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 46,
+          "name": "keymaster_b",
+          "partuuid": "a362fe79-358c-ab25-0b55-707732408ab6",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 409380,
+          "last_lba": 409507,
+          "bytes": 524288,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 47,
+          "name": "spuservice_b",
+          "partuuid": "856b81a5-2e2b-08bc-e4aa-f7f796a54e9f",
+          "type_uuid": "7184c01f-26d7-409f-8a49-eae8ec949a7c",
+          "first_lba": 409508,
+          "last_lba": 409539,
+          "bytes": 131072,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 48,
+          "name": "boot_b",
+          "partuuid": "ccf95460-b93a-6d07-5426-c628d1e87289",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 409540,
+          "last_lba": 434115,
+          "bytes": 100663296,
+          "attrs": 68398419340689408
+        },
+        {
+          "number": 49,
+          "name": "devcfg_b",
+          "partuuid": "dff870b7-8656-fe5c-af1c-3ef365f8f2e8",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 434116,
+          "last_lba": 434147,
+          "bytes": 131072,
+          "attrs": 70650219154374656
+        },
+        {
+          "number": 50,
+          "name": "qupfw_b",
+          "partuuid": "fa483a98-af15-3e84-e3c5-d02531feff0c",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 434148,
+          "last_lba": 434167,
+          "bytes": 81920,
+          "attrs": 70650219154374656
+        },
+        {
+          "number": 51,
+          "name": "vbmeta_b",
+          "partuuid": "109b2d03-d548-ed1b-5286-7a2ddf8ffc93",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 434168,
+          "last_lba": 434183,
+          "bytes": 65536,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 52,
+          "name": "dtbo_b",
+          "partuuid": "dfc51c2f-6a8e-72ee-a64e-0aa292ee5637",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 434184,
+          "last_lba": 440327,
+          "bytes": 25165824,
+          "attrs": 70650219154374656
+        },
+        {
+          "number": 53,
+          "name": "uefisecapp_b",
+          "partuuid": "2d367e46-e117-fee1-762c-eb4f6fddcba5",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 440328,
+          "last_lba": 440839,
+          "bytes": 2097152,
+          "attrs": 70650219154374656
+        },
+        {
+          "number": 54,
+          "name": "imagefv_b",
+          "partuuid": "89759e22-9d61-0253-3c70-02c1d75a1c92",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 440840,
+          "last_lba": 441351,
+          "bytes": 2097152,
+          "attrs": 70650219154374657
+        },
+        {
+          "number": 55,
+          "name": "shrm_b",
+          "partuuid": "f8c21332-0e91-ae1f-e8d1-cdeabe3f664c",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 441352,
+          "last_lba": 441415,
+          "bytes": 262144,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 56,
+          "name": "vm-bootsys_b",
+          "partuuid": "62a41da6-08dd-6fe3-aefb-6e74850ae40c",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 441416,
+          "last_lba": 518215,
+          "bytes": 314572800,
+          "attrs": 70650219154374656
+        },
+        {
+          "number": 57,
+          "name": "cpucp_b",
+          "partuuid": "a4ad1dc3-7446-812e-fb71-c1af8d89d761",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 518216,
+          "last_lba": 518471,
+          "bytes": 1048576,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 58,
+          "name": "featenabler_b",
+          "partuuid": "150d3439-0282-4526-b7d2-a4b7cc22c61f",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 518472,
+          "last_lba": 518503,
+          "bytes": 131072,
+          "attrs": 70650219154374656
+        },
+        {
+          "number": 59,
+          "name": "vendor_boot_b",
+          "partuuid": "9ddd1d1a-3d6c-be4d-534c-60b9d0060781",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 518504,
+          "last_lba": 543079,
+          "bytes": 100663296,
+          "attrs": 70650219154374656
+        },
+        {
+          "number": 60,
+          "name": "qweslicstore_b",
+          "partuuid": "7f449bcf-8ccd-309a-e72d-589bcb882323",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 543080,
+          "last_lba": 543143,
+          "bytes": 262144,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 61,
+          "name": "oplus_sec_b",
+          "partuuid": "47550596-fd05-82c1-dee4-32ca588c726a",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 543144,
+          "last_lba": 545703,
+          "bytes": 10485760,
+          "attrs": 0
+        },
+        {
+          "number": 62,
+          "name": "recovery_b",
+          "partuuid": "e5c36526-0258-dc7b-76c2-b5ae338b405f",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 545704,
+          "last_lba": 571303,
+          "bytes": 104857600,
+          "attrs": 70650219154374656
+        },
+        {
+          "number": 63,
+          "name": "splash_b",
+          "partuuid": "70563466-e988-26e2-31c7-6c4053f742a7",
+          "type_uuid": "77036cd4-03d5-42bb-8ed1-37e5a88baa34",
+          "first_lba": 571304,
+          "last_lba": 579659,
+          "bytes": 34226176,
+          "attrs": 0
+        },
+        {
+          "number": 64,
+          "name": "xbl_ramdump_b",
+          "partuuid": "6719f926-beb6-b908-c83e-0ad43593ad70",
+          "type_uuid": "c3e58b09-abcb-42ea-9f0c-3fa453fa892e",
+          "first_lba": 579660,
+          "last_lba": 580171,
+          "bytes": 2097152,
+          "attrs": 70650219154374656
+        },
+        {
+          "number": 65,
+          "name": "init_boot_b",
+          "partuuid": "2e56f730-2080-cbb5-96c3-ea136e1d8c42",
+          "type_uuid": "e5b0f3f7-6606-43da-bce1-84dc0a239ddd",
+          "first_lba": 580172,
+          "last_lba": 582219,
+          "bytes": 8388608,
+          "attrs": 70650219154374656
+        },
+        {
+          "number": 66,
+          "name": "cpucp_dtb_b",
+          "partuuid": "3e27433c-060e-422e-2247-47a5178821f6",
+          "type_uuid": "57213a2b-39de-4184-97de-645d37913e4e",
+          "first_lba": 582220,
+          "last_lba": 582235,
+          "bytes": 65536,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 67,
+          "name": "pvmfw_b",
+          "partuuid": "aeab16c7-c1e6-dffa-4929-f94c5afbc959",
+          "type_uuid": "6e5554c2-eaf7-4e75-bf14-ba2e3cc13d3c",
+          "first_lba": 582236,
+          "last_lba": 582491,
+          "bytes": 1048576,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 68,
+          "name": "soccp_debug_b",
+          "partuuid": "21073001-e193-d9a4-9aee-bb4063c663b2",
+          "type_uuid": "88ce4b5f-616e-4549-b875-565dad984951",
+          "first_lba": 582492,
+          "last_lba": 582619,
+          "bytes": 524288,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 69,
+          "name": "soccp_dcd_b",
+          "partuuid": "e7ff41e9-1425-376e-0e5b-b0bcb9f9c216",
+          "type_uuid": "bf795a2c-f2ea-4110-85ea-95cc43fe1532",
+          "first_lba": 582620,
+          "last_lba": 582625,
+          "bytes": 24576,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 70,
+          "name": "pdp_b",
+          "partuuid": "ecd4fa96-77a4-1ec9-c1aa-e93976d151c1",
+          "type_uuid": "23bc2066-6df0-4869-b84d-84b6247e3c53",
+          "first_lba": 582626,
+          "last_lba": 582689,
+          "bytes": 262144,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 71,
+          "name": "pdp_cdb_b",
+          "partuuid": "bf155101-ff79-5329-df69-2c8e7dc686f1",
+          "type_uuid": "c49242aa-4c04-43c5-9e81-817af9c23ad5",
+          "first_lba": 582690,
+          "last_lba": 582721,
+          "bytes": 131072,
+          "attrs": 1223571723761221632
+        },
+        {
+          "number": 72,
+          "name": "devinfo",
+          "partuuid": "58d60e15-b6cc-e308-288d-5bf226aaa90c",
+          "type_uuid": "65addcf4-0c5c-4d9a-ac2d-d90b5cbfcd03",
+          "first_lba": 582722,
+          "last_lba": 582722,
+          "bytes": 4096,
+          "attrs": 1152921504606846976
+        },
+        {
+          "number": 73,
+          "name": "toolsfv",
+          "partuuid": "adca0037-453d-ceb5-8319-5b24a14e1ba5",
+          "type_uuid": "97745aba-135a-44c3-9adc-05616173c24c",
+          "first_lba": 582723,
+          "last_lba": 582978,
+          "bytes": 1048576,
+          "attrs": 1152921504606846976
+        },
+        {
+          "number": 74,
+          "name": "logfs",
+          "partuuid": "f53f8001-8032-4860-37b7-7702c8b8e3f2",
+          "type_uuid": "bc0330eb-3410-4951-a617-03898dbe3372",
+          "first_lba": 582979,
+          "last_lba": 585026,
+          "bytes": 8388608,
+          "attrs": 0
+        },
+        {
+          "number": 75,
+          "name": "storsec",
+          "partuuid": "3b6dc76e-b779-b2b2-9c5e-a4c7f2d8e29f",
+          "type_uuid": "02db45fe-ad1b-4cb6-aecc-0042c637defa",
+          "first_lba": 585027,
+          "last_lba": 585058,
+          "bytes": 131072,
+          "attrs": 1152921504606846976
+        },
+        {
+          "number": 76,
+          "name": "uefivarstore",
+          "partuuid": "fcd61190-d8cf-d858-9bf4-d471b45220ec",
+          "type_uuid": "165bd6bc-9250-4ac8-95a7-a93f4a440066",
+          "first_lba": 585059,
+          "last_lba": 585186,
+          "bytes": 524288,
+          "attrs": 1152921504606846976
+        },
+        {
+          "number": 77,
+          "name": "secdata",
+          "partuuid": "08870e38-d193-8363-5ffc-299e1a5adaac",
+          "type_uuid": "76cfc7ef-039d-4e2c-b81e-4dd8c2cb2a93",
+          "first_lba": 585187,
+          "last_lba": 585193,
+          "bytes": 28672,
+          "attrs": 1152921504606846976
+        },
+        {
+          "number": 78,
+          "name": "vm-persist",
+          "partuuid": "cea4dd6a-711e-47c9-5f1b-f161d1f49026",
+          "type_uuid": "15f54a44-cb65-4cc5-92de-38b13485bfdf",
+          "first_lba": 585194,
+          "last_lba": 619753,
+          "bytes": 141557760,
+          "attrs": 0
+        },
+        {
+          "number": 79,
+          "name": "mdcompress",
+          "partuuid": "0532d9af-d5b7-7366-9cf2-a4c8784e7dd4",
+          "type_uuid": "c6a5a9f5-86cd-4bea-a2ca-6c58644b0da8",
+          "first_lba": 619754,
+          "last_lba": 624873,
+          "bytes": 20971520,
+          "attrs": 1152921504606846976
+        },
+        {
+          "number": 80,
+          "name": "connsec",
+          "partuuid": "8acee3f1-3f1a-8368-e709-80f89b3896a5",
+          "type_uuid": "6a716f7c-b68a-4977-9afe-452be73594a6",
+          "first_lba": 624874,
+          "last_lba": 624905,
+          "bytes": 131072,
+          "attrs": 1152921504606846976
+        },
+        {
+          "number": 81,
+          "name": "tzsc",
+          "partuuid": "7933ae29-3c09-f278-7b94-2ee9dab91ffc",
+          "type_uuid": "478dea49-abe9-4391-85df-bf4bc2eb08f6",
+          "first_lba": 624906,
+          "last_lba": 624937,
+          "bytes": 131072,
+          "attrs": 1152921504606846976
+        },
+        {
+          "number": 82,
+          "name": "spunvm",
+          "partuuid": "e48949c4-c625-dd40-e420-2e8413f8c412",
+          "type_uuid": "e42e2b4c-33b0-429b-b1ef-d341c547022c",
+          "first_lba": 624938,
+          "last_lba": 633129,
+          "bytes": 33554432,
+          "attrs": 0
+        },
+        {
+          "number": 83,
+          "name": "xbl_sc_test_mode",
+          "partuuid": "bb2f7fa7-c7c3-1c9d-ae6e-bc07aa393c0c",
+          "type_uuid": "91fdd2b9-8ed3-4176-bc42-260f2e34d04a",
+          "first_lba": 633130,
+          "last_lba": 633145,
+          "bytes": 65536,
+          "attrs": 0
+        },
+        {
+          "number": 84,
+          "name": "xbl_sc_logs",
+          "partuuid": "daa8a7cf-92b4-ffc3-8c7d-c1d5d7557f13",
+          "type_uuid": "f7eecb66-781a-439a-8955-70e12ed4a7a0",
+          "first_lba": 633146,
+          "last_lba": 633177,
+          "bytes": 131072,
+          "attrs": 0
+        },
+        {
+          "number": 85,
+          "name": "dpm",
+          "partuuid": "299332f0-79e7-542f-48cd-56e7caa41bdb",
+          "type_uuid": "a7a4f43a-888f-4913-8c2b-e1bc64bce08f",
+          "first_lba": 633178,
+          "last_lba": 633179,
+          "bytes": 8192,
+          "attrs": 1152921504606846976
+        },
+        {
+          "number": 86,
+          "name": "apdp_full",
+          "partuuid": "3d1aa81d-e6ae-993c-157d-9d2579ba34db",
+          "type_uuid": "114d49de-67be-41b8-a4c2-d1109681fbde",
+          "first_lba": 633180,
+          "last_lba": 633243,
+          "bytes": 262144,
+          "attrs": 0
+        },
+        {
+          "number": 87,
+          "name": "last_parti",
+          "partuuid": "3b2d9572-220e-21da-0b01-f2fc0c90c5be",
+          "type_uuid": "df06677c-2f0b-425a-914e-8b7b7b80d70f",
+          "first_lba": 633244,
+          "last_lba": 634874,
+          "bytes": 6680576,
+          "attrs": 1152921504606846976
+        }
+      ],
+      "unallocated": []
+    },
+    {
+      "path": "/dev/sde",
+      "block_size": 4096,
+      "bytes": 12582912,
+      "first_usable_lba": 6,
+      "last_usable_lba": 3066,
+      "header_crc_valid": true,
+      "table_crc_valid": true,
+      "partitions": [
+        {
+          "number": 1,
+          "name": "ALIGN_TO_128K_1",
+          "partuuid": "84af11f8-9bd0-9654-f270-57da4392ce7d",
+          "type_uuid": "fde1604b-d68b-4bd4-973d-962ae7a1ed88",
+          "first_lba": 6,
+          "last_lba": 31,
+          "bytes": 106496,
+          "attrs": 1152921504606846976
+        },
+        {
+          "number": 2,
+          "name": "cdt",
+          "partuuid": "27caf6f3-3437-4bf7-b761-170b9420c683",
+          "type_uuid": "a19f205f-ccd8-4b6d-8f1e-2d9bc24cffb1",
+          "first_lba": 32,
+          "last_lba": 63,
+          "bytes": 131072,
+          "attrs": 1152921504606846976
+        },
+        {
+          "number": 3,
+          "name": "ddr",
+          "partuuid": "b38f66f5-0dda-e5b3-7ee4-f094b0f0a691",
+          "type_uuid": "20a0c19c-286a-42fa-9ce7-f64c3226a794",
+          "first_lba": 64,
+          "last_lba": 319,
+          "bytes": 1048576,
+          "attrs": 1152921504606846976
+        },
+        {
+          "number": 4,
+          "name": "engineering_cdt_a",
+          "partuuid": "c69c7519-1f59-5b35-8669-0dca36d35685",
+          "type_uuid": "21a0c19c-287a-42fa-91e7-f64c3226a894",
+          "first_lba": 320,
+          "last_lba": 575,
+          "bytes": 1048576,
+          "attrs": 1154047404513689600
+        },
+        {
+          "number": 5,
+          "name": "ocdt",
+          "partuuid": "acaed7c1-7de6-0eaa-5da9-f360de2a9eec",
+          "type_uuid": "517c596d-dee5-48b9-a2e9-cdf20ee71d8a",
+          "first_lba": 576,
+          "last_lba": 607,
+          "bytes": 131072,
+          "attrs": 0
+        },
+        {
+          "number": 6,
+          "name": "dinfo",
+          "partuuid": "4df02db4-9890-bb85-efa7-2cee5cabd7e9",
+          "type_uuid": "e02d0037-81ec-43d1-abe0-222de46599be",
+          "first_lba": 608,
+          "last_lba": 611,
+          "bytes": 16384,
+          "attrs": 0
+        },
+        {
+          "number": 7,
+          "name": "engineering_cdt_b",
+          "partuuid": "f14cd691-8a75-8ee0-a1cf-90a79d29ce10",
+          "type_uuid": "b4184eda-2088-4863-a18f-9576f717adf3",
+          "first_lba": 612,
+          "last_lba": 867,
+          "bytes": 1048576,
+          "attrs": 1152921504606846976
+        },
+        {
+          "number": 8,
+          "name": "last_parti",
+          "partuuid": "7495f70b-1e24-6e90-c9c2-0dc8bad154e8",
+          "type_uuid": "e2ade594-9416-4c92-8bc8-e8172468f7a3",
+          "first_lba": 868,
+          "last_lba": 3066,
+          "bytes": 9007104,
+          "attrs": 1152921504606846976
+        }
+      ],
+      "unallocated": []
+    },
+    {
+      "path": "/dev/sdf",
+      "block_size": 4096,
+      "bytes": 490733568,
+      "first_usable_lba": 6,
+      "last_usable_lba": 119802,
+      "header_crc_valid": true,
+      "table_crc_valid": true,
+      "partitions": [
+        {
+          "number": 1,
+          "name": "ALIGN_TO_128K_2",
+          "partuuid": "2c922fea-4c5d-720c-5168-894df46be3d5",
+          "type_uuid": "6891a3b7-0ccc-4705-bb53-2673cac193bd",
+          "first_lba": 6,
+          "last_lba": 31,
+          "bytes": 106496,
+          "attrs": 1152921504606846976
+        },
+        {
+          "number": 2,
+          "name": "oplusreserve1",
+          "partuuid": "b8489b2c-c174-a0fb-5820-50e1d2d0b459",
+          "type_uuid": "cc5060f0-6081-4acc-b5ae-12ce5e5fd82a",
+          "first_lba": 32,
+          "last_lba": 2079,
+          "bytes": 8388608,
+          "attrs": 0
+        },
+        {
+          "number": 3,
+          "name": "oplusreserve2",
+          "partuuid": "12bb8297-ea0e-4493-5c17-d84456d684cf",
+          "type_uuid": "918d1b9c-3c56-46b9-8073-ad5d829c79e3",
+          "first_lba": 2080,
+          "last_lba": 67615,
+          "bytes": 268435456,
+          "attrs": 0
+        },
+        {
+          "number": 4,
+          "name": "oplusreserve3",
+          "partuuid": "3f41fbe1-ffa5-842a-f8dc-6603f490d36c",
+          "type_uuid": "3c94aa5b-f387-417b-8ac8-f45f20024666",
+          "first_lba": 67616,
+          "last_lba": 83999,
+          "bytes": 67108864,
+          "attrs": 0
+        },
+        {
+          "number": 5,
+          "name": "oplusreserve4",
+          "partuuid": "bfbee721-1813-9941-3b86-c7a25e8a1034",
+          "type_uuid": "93979d8a-c2d3-4a95-99ff-b3ea0f61b916",
+          "first_lba": 84000,
+          "last_lba": 92191,
+          "bytes": 33554432,
+          "attrs": 0
+        },
+        {
+          "number": 6,
+          "name": "oplusreserve5",
+          "partuuid": "e173b888-5063-641f-0b4f-2b0fb357e3b8",
+          "type_uuid": "56ff8b14-4a2e-4f8d-9d49-ddb4990961b3",
+          "first_lba": 92192,
+          "last_lba": 108575,
+          "bytes": 67108864,
+          "attrs": 0
+        },
+        {
+          "number": 7,
+          "name": "nonmodemst1",
+          "partuuid": "9f020531-2607-8bfc-96a6-867a3a3f3b28",
+          "type_uuid": "5e087ba0-22c9-e33b-8f5d-0e81686a68cb",
+          "first_lba": 108576,
+          "last_lba": 109087,
+          "bytes": 2097152,
+          "attrs": 0
+        },
+        {
+          "number": 8,
+          "name": "nonmodemst2",
+          "partuuid": "8a349cdc-c4f3-bc89-ac62-3f255d6ce8ee",
+          "type_uuid": "18cf72d9-22c9-e33b-8f5d-0e81686a68cb",
+          "first_lba": 109088,
+          "last_lba": 109599,
+          "bytes": 2097152,
+          "attrs": 0
+        },
+        {
+          "number": 9,
+          "name": "DRIVER",
+          "partuuid": "9245aca3-2ff3-73b0-99f2-f0bda70520df",
+          "type_uuid": "004a6838-062a-44df-8152-4f340c052256",
+          "first_lba": 109600,
+          "last_lba": 117791,
+          "bytes": 33554432,
+          "attrs": 0
+        },
+        {
+          "number": 10,
+          "name": "param",
+          "partuuid": "ad230af8-ad2b-e6a0-ab49-fdb4e444d2a7",
+          "type_uuid": "6d679bab-23c7-466e-90ac-a39897c15640",
+          "first_lba": 117792,
+          "last_lba": 118047,
+          "bytes": 1048576,
+          "attrs": 0
+        },
+        {
+          "number": 11,
+          "name": "last_parti",
+          "partuuid": "37e0e7b2-560b-6ab6-b6b1-9a39dd460e4a",
+          "type_uuid": "d000b03b-7927-4f56-a20c-3c4e6c6cfeed",
+          "first_lba": 118048,
+          "last_lba": 119802,
+          "bytes": 7188480,
+          "attrs": 1152921504606846976
+        }
+      ],
+      "unallocated": []
+    }
+  ]
+}

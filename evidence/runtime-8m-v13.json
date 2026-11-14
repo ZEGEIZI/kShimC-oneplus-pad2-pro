@@ -1,0 +1,100 @@
+{
+  "version": "Atlas 8 MiB v13",
+  "date_local": "2026-11-10",
+  "passed": true,
+  "hardware_verified": false,
+  "device_written": false,
+  "baseline": "artifacts/android-ext4-atlas-v12/boot.img",
+  "artifact": "artifacts/android-ext4-atlas-8m-v13",
+  "boot": {
+    "passed": true,
+    "mode": "external-production",
+    "hardware_verified": false,
+    "boot_sha256": "6b4336506db545c34a28e609481adb1a56cb9826b83882794490c29342fde5b7",
+    "stock_boot_sha256": "2225e3447ee3c3833dea11aedc82f3123d3d391ab231b791c4b90a65e56169ce",
+    "runtime_sha256": "62d18208bb5d0f78ac03fddf091fd7d40b8749e6899836836c0e3b81eeba4dd0",
+    "packed_kernel_bytes": 45744332,
+    "layout": {
+      "entries": [
+        {
+          "offset": 0,
+          "bytes": 36731392,
+          "type": 1,
+          "flags": 5,
+          "dtb_index": 0,
+          "name": "原厂 Android"
+        },
+        {
+          "offset": 37355520,
+          "bytes": 8388608,
+          "type": 3,
+          "flags": 4,
+          "dtb_index": 0,
+          "name": "Attached Shim"
+        }
+      ],
+      "linux_embedded": false,
+      "android_retained": true,
+      "original_base_restored": true,
+      "runtime_slot_bytes": 8388608
+    },
+    "device_written": false
+  },
+  "runtime": {
+    "passed": true,
+    "source_built": true,
+    "old_build_not_mounted": true,
+    "runtime_sha256": "62d18208bb5d0f78ac03fddf091fd7d40b8749e6899836836c0e3b81eeba4dd0",
+    "reference_runtime_sha256": "d6f6b02f81a7e380f7f25f168e21e47dfcd80b6383a8ef6ef80d70b9849119d7",
+    "reference_runtime_identical": false,
+    "mode": "ext4",
+    "hardware_verified": false,
+    "runtime_slot_bytes": 8388608,
+    "runtime_bytes": 8388608,
+    "config_sha256": "dd7df62de6c6e54729ffce64d40c563742a283c58bb5ec77d91f759ee76dd3ef"
+  },
+  "link_and_roundtrip": {
+    "over4m": "accepted",
+    "over8m": "rejected",
+    "over4m_in_historical_slot": "rejected",
+    "runtime_used_bytes": 4115968,
+    "runtime_slot_bytes": 8388608,
+    "runtime_free_bytes": 4272640,
+    "unpack_repack_identical": true,
+    "android_restored_identical": true,
+    "avb_hash_verified": true
+  },
+  "tests": {
+    "total": 29,
+    "new_slot_contract_tests": 6,
+    "ext4_integration_tests": 23,
+    "passed": true
+  },
+  "historical": {
+    "runtime_slot_bytes": 4194304,
+    "reference_hash_lock_unchanged": true,
+    "rebuilt": false
+  },
+  "pending": "User manual fastboot boot: menu, external Linux and original Android",
+  "source_sha256": {
+    "tools/boot_contract.py": "dbd92f1affbcd4c96eb33d9f81075bd5ded02da9035a4a63679f1b376cf60363",
+    "tools/build_boot_tools.py": "5df88573bd0a24b7d680f1e4b36eb77f8c6b296b6bdfb1268393e6b5133b3367",
+    "tools/build_external_boot.py": "c135bf5cee2c129f3f03a47bcb2de8293c4d8cf20cface69351ec7526125ad79",
+    "boot/vendor/kshim/CMakeLists.txt": "adf4bd98a85d38cf432bac34b024d7d96ae5f15cce81c7098c0cb0464189f287",
+    "boot/vendor/kshim/src/include/ld/arm64_ld.h": "fba3c05cb83d79400999050bcbaee7c4d62d3dc4664651ca5fcc5a6aaace374b",
+    "boot/vendor/kshim/src/core/main.c": "e4d6b2333dfcfd7fb5c632329bc304b286ee61833a80d048acf74104541755f5",
+    "boot/kshim-ext4.config": "dd7df62de6c6e54729ffce64d40c563742a283c58bb5ec77d91f759ee76dd3ef",
+    "tests/test_boot_contract.py": "7913dae6c40fd7997693b2aaef773a2fb7ef3e46b5268c46790d783711341037",
+    "docs/8MiB运行体.md": "6558155c7ba3b8330ee379373f28c8d4788592fd103fae2949957f2cb7a70c16",
+    "README.md": "43c88fbb010bf3ca3d0e5ce021277d9c2aef968fffdf957c1bdd90255d83ac0b"
+  },
+  "verification_sha256": {
+    "_build/runtime-8m-v13-build.log": "f6cfdfc7d7cc15211e3f5d8cef00833b9a9e032a8cfd4cc24b77c8e95652f71d",
+    "_build/runtime-8m-v13-pack.log": "c7269d18f6ccb1e530af946d2490000bfb6b56fc1cf5ec41f4d7e8c724fc24e6",
+    "_build/runtime-8m-v13-all-tests.log": "a3beb741f9220c5a22f2ed1dcfe4e3bcefab8de4becfb68246b89ca607dd958d",
+    "_build/runtime-8m-v13-link/checks.log": "8d64e81ae8e7b42ac555160ff6dee3abd4c2b20420292c8bac6655669351585f",
+    "_build/runtime-8m-v13-link/roundtrip.log": "790e5b984128af3bfeb0fc1e988de8d8018cb70ec14d8aa65b5424c100029aa5",
+    "_build/runtime-8m-v13-link/avb.log": "f1bdad3d52cf265998dee3158deafb3ccf56eb938135c1e3e7e94212530e469e",
+    "_build/runtime-8m-v13-verify.py": "a67a374b0ff98b446e4adc5d2ff2bbf1f429c8a73188fa1c97bb615ea9ddf319"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "date_local": "2026-11-10",
+  "candidate": "debug-v3",
+  "boot_sha256": "4c7f3095f1b542766bde5638357f0e781458b14c527bcdc6423cf56445d96a03",
+  "temporary_fastboot_boot": true,
+  "boot_partition_flashed": false,
+  "user_observation": "External GPT error -2; return",
+  "confirmed_stages": [
+    "OnePlus profile",
+    "CPU physical mapping",
+    "inherited identity SMMU mapping",
+    "UFS claim",
+    "NOP",
+    "device power",
+    "LUN capacity"
+  ],
+  "external_linux_loaded": false,
+  "safe_return_then_memory_linux_boot": true,
+  "linux_release": "7.2.6-opd2413-full-system03",
+  "boot_partition_hashes_unchanged_after_test": true,
+  "next_action": "READ(10) for representable LBAs plus pre-release SCSI/OCS diagnostics"
+}

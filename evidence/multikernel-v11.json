@@ -1,0 +1,60 @@
+{
+  "candidate": "android-ext4-multikernel-v11",
+  "boot_sha256": "bbeae15c59062190f1a2175f6646f2a7d2ab69e78b26af3ecfa0c4f1cfa19428",
+  "runtime_sha256": "0e655fa71363e525b8ee7a86d221ebf730c0b3c799915427dac35de722ba466b",
+  "tests": {
+    "integration_cases": 23,
+    "native_ufs_cases": 15,
+    "synthetic_payload_catalog_entries": 32,
+    "menu_state_machine_sanitizers": true,
+    "real_armada_payload_legacy_config": {
+      "status": 0,
+      "entries": 1,
+      "block_reads": 18434,
+      "catalog": [
+        {
+          "system": "armadaos",
+          "version": "current-baseline-20261110",
+          "release": "7.2.6-opd2413-full-system03",
+          "current": 1,
+          "previous": 0,
+          "payload_status": 0
+        }
+      ]
+    },
+    "runtime_chooser_ext4_payload_selections": 32,
+    "actual_selected_payload_hashes_and_full_cmdlines_verified": true,
+    "healthy_selection_with_unselected_bad_manifest_verified": true,
+    "rollback_from_corrupt_current_and_refuse_corrupt_target": true
+  },
+  "tests_log_sha256": "92d1678f33b588aa8af7b4b49e65cff0fea963b31b7d94e17679940bba3a10db",
+  "source_sha256": {
+    "boot/vendor/kshim/src/include/ext4_boot.h": "56f72a17641b1d55d7b210df9cd9fbb4795268f81ece804962a1c641dd6956c5",
+    "boot/vendor/kshim/src/include/boot_files_menu.h": "3b59aa24dbf21821e15ea3e29b5caa3f71cf86c70f00f362feaadcf8d431bf5e",
+    "boot/vendor/kshim/src/core/boot_files_config.c": "651b38b478724e3f8b17fa301523aa1e74b6a4bc706e260646549127be3a6525",
+    "boot/vendor/kshim/src/core/boot_files_menu.c": "5bc8d076acdfd6b47f4d28133e5edb88af1657a21e902f22d6b2df84e6673041",
+    "boot/vendor/kshim/src/arch/arm64/boot_files_native.c": "0f836f8e031d15f15a7a3dea3dd53235390a8fd57d7ea71f656f08ae44ff4bb7",
+    "tools/boot_files.py": "c65efe4cbd5de57c884e42e1d7ebce6247b8fb7c6d4e8a1c0450ce3c4941ae8a",
+    "tools/check_boot_files.c": "4d7fe706316192537fe0c0b5fd88edc4afe8735138e8393c7c6ebc7152cd64f5",
+    "tools/build_host_checks.py": "ca8c47d938e9742913bfb6cbc06611f5141a7b795e47f3f39d139728f7d60d0d",
+    "tests/test_boot_files.py": "f8f4c0009527bfdfae6e60cfcbe1145b487aa61bf8bfb9a53f905fa5dfece102",
+    "tests/boot_files_menu_test.c": "1038465d53e90655806c1041699dc0b9421081aa2b7bcd39cfc536a7000b8f81"
+  },
+  "hardware_verified": true,
+  "copy_boot_verified": true,
+  "switch_back_verified": true,
+  "same_kernel_copy_publication": "evidence/multikernel-copy-publication.json",
+  "boot_partition_flashed": false,
+  "preceding_copy_claim_actual_ssh_version": "current-baseline-20261110",
+  "pending": null,
+  "copy_boot_evidence": "evidence/hardware-multikernel-v11-copy.json",
+  "switch_back_evidence": "evidence/hardware-multikernel-v11-original.json",
+  "verification_scope": "16 GB OPD2413: v11 boots independent copy and original entries of the same ArmadaOS kernel build, confirmed by distinct chosen boot IDs; host tests cover 4 systems and 32 distinct synthetic payload entries",
+  "second_distinct_kernel_build_hardware_verified": false,
+  "final_android_partition_sha256": {
+    "boot_a": "0ccf10f07aafa16062df60b7e5ec8ec2bee91aa71250e1478954f8a489e92b11",
+    "init_boot_a": "3e563c87f4caa639bd8eb5c4df4c591eb64b16fcfe18e6636c780d9783f0c6f4",
+    "vendor_boot_a": "c2b5d48f652cfffe205549ba0bd421238d4af89924d702259623df80f15448b1"
+  },
+  "android_partitions_unchanged": true
+}

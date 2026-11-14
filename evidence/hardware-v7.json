@@ -1,0 +1,19 @@
+{
+  "candidate": "debug-v7",
+  "boot_sha256": "b4ba54e2ef1b0903e85e6d4b60c2dd48d200af9a2b14a7a49b2f6b01f13100da",
+  "user_observation": "chosen -3 L0 op28 ...",
+  "confirmed_by_selected_load_control_flow": [
+    "Image header validation",
+    "DTB length and SHA-256",
+    "Linux DTB identity",
+    "runtime memory DT capture/apply",
+    "RAM placement and CPU mappings",
+    "Image length and SHA-256",
+    "external initramfs length and SHA-256"
+  ],
+  "external_linux_boot_verified": false,
+  "cause_found": "dt_memory_apply packs the output DTB; the caller updated chosen without fdt_open_into to expose the backing buffer capacity. FDT_ERR_NOSPACE is -3.",
+  "offline_verification": "Regression reproduces -NOSPACE on a packed tree; the fixed helper passes chosen updates after merging the actual stock runtime DT and exported Linux DT, with a 4095-byte command line and external/builtin initrd modes.",
+  "next_candidate": "debug-v8",
+  "device_action_after_manual_testing_request": false
+}

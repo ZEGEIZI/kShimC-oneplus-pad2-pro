@@ -1,0 +1,126 @@
+{
+  "version": "Atlas capacity v15",
+  "date_local": "2026-11-10",
+  "passed": true,
+  "hardware_verified": false,
+  "device_written": false,
+  "artifact": "artifacts/android-ext4-atlas-capacity-v15",
+  "boot": {
+    "passed": true,
+    "mode": "external-production",
+    "hardware_verified": false,
+    "boot_sha256": "289d37b84f699cfec5986fcdd2ba294c2d057a17af2bc2a291d91dcb4cf63c56",
+    "stock_boot_sha256": "2225e3447ee3c3833dea11aedc82f3123d3d391ab231b791c4b90a65e56169ce",
+    "runtime_sha256": "cba3816142dbdbc2013b9f574709759fab23371b0121a2db0cd177433c44c587",
+    "packed_kernel_bytes": 45744332,
+    "layout": {
+      "entries": [
+        {
+          "offset": 0,
+          "bytes": 36731392,
+          "type": 1,
+          "flags": 5,
+          "dtb_index": 0,
+          "name": "原厂 Android"
+        },
+        {
+          "offset": 37355520,
+          "bytes": 8388608,
+          "type": 3,
+          "flags": 4,
+          "dtb_index": 0,
+          "name": "Attached Shim"
+        }
+      ],
+      "linux_embedded": false,
+      "android_retained": true,
+      "original_base_restored": true,
+      "runtime_slot_bytes": 8388608
+    },
+    "device_written": false
+  },
+  "memory": {
+    "runtime_used_bytes": 7040576,
+    "runtime_slot_bytes": 8388608,
+    "runtime_free_bytes": 1348032,
+    "general_heap_bytes": 262144
+  },
+  "capacities": {
+    "dtb_input_bytes": 1048576,
+    "dtb_output_bytes": 1310720,
+    "lvgl_draw_buffer_count": 2,
+    "lvgl_draw_buffer_bytes_each": 434176,
+    "draw_rows_at_width_3392": 32,
+    "lvgl_heap_bytes": 1048576,
+    "atlas_font_pixel_sizes": [
+      64,
+      44,
+      28
+    ],
+    "atlas_glyph_cache_entries": [
+      16,
+      28,
+      32
+    ],
+    "general_heap_bytes": 262144
+  },
+  "verification": {
+    "python_tests_passed": 31,
+    "new_dtb_boundary_tests": 2,
+    "dtb_pipeline": "Near-1-MiB property data survives memory snapshot/apply, max-length bootargs, initrd and simplefb; old 320-KiB output rejects the same input",
+    "ui": "Real LVGL ASan/UBSan, 1-MiB heap, 32-row buffers, EN/ZH pages, 9 kernel rows, key indices, icon/text bounds and 3 lifecycles",
+    "ui_peak_sampled_heap_bytes": 112832,
+    "dt_handoff_test_passed": true,
+    "atlas_platform_test_passed": true,
+    "runtime_8m_link_assert_passed": true,
+    "general_heap_elf_bounds_verified": true,
+    "packed_unpack_repack_identical": true,
+    "android_restoration_identical": true,
+    "avb_hash_verified": true,
+    "visual_review": "_build/capacity-v15-preview/overview.png"
+  },
+  "compatibility": {
+    "historical_mode_slot_bytes": 4194304,
+    "historical_mode_general_heap_bytes": 65536,
+    "historical_rebuilt": false,
+    "older_loader_dtb_limit_bytes": 262144
+  },
+  "pending": "User manual fastboot boot: menu, current external Linux payloads and original Android. No tablet operation performed.",
+  "source_sha256": {
+    "LINUX-BOOT-PROTOCOL.md": "f374861f43d77324f0732f2d61faf62c41702abf7792ea2d8c55df1947aef8ca",
+    "README.md": "34481adad232bdc1c78d80ad7efc248e895384fc273eeff1e578795eb8aa22b5",
+    "boot/kshim-ext4.config": "81c229d9020260699f06b4ca941935d0f91e60cc259099030f842b5b96f0a5a0",
+    "boot/vendor/kshim/CMakeLists.txt": "a0163f85bbadf6e2cee5c6839037c705f43b986fe14c557b7c146fd693a301c6",
+    "boot/vendor/kshim/src/Kconfig": "68383b4ccafe523c4a64f6d192d1ec5b64c9b1d21319b6101d2749b1a9abd061",
+    "boot/vendor/kshim/src/arch/arm64/aarch64.lds": "82b18d2f41c28b7d9cdfa64fb7803e607a76c6194c5262fc2fb2e221852ea780",
+    "boot/vendor/kshim/src/arch/arm64/boot_files_native.c": "7d80484847c90cf776492a6a5675824178835070a45382a2fdd24885b1680e3a",
+    "boot/vendor/kshim/src/core/boot_files_config.c": "15237c6823cfb51319b04f49be21825d7efedbc7d99d8c7ec27f1f37ab21d897",
+    "boot/vendor/kshim/src/core/main.c": "08497b43e44bac1e31042c4ab385bb7a09838aaa0715d9130dbbd29fa47b54f3",
+    "boot/vendor/kshim/src/include/ext4_boot.h": "ad080f2d82bb8da8becd5f5241097355c81044bd744e3bcfed3b9e69696a7627",
+    "boot/vendor/kshim/src/include/ld/arm64_ld.h": "1991bdbd0db3bafb330d9387da85309cdeb61ab64d414380fb7208840df96488",
+    "boot/vendor/kshim/src/include/lv_conf.h": "f52543f07d5239a509567863cd9660d4f892be5a1507fd20bc6099276af2ebe8",
+    "boot/vendor/kshim/src/ui/lvgl_port.c": "459f19d548daf8ec3e659bb04724f405145af60dd4384af286ac01530eac141a",
+    "boot/vendor/kshim/tests/CMakeLists.txt": "5d661dde72bd4d8e0b453c7b2e329e58e2ded71cc2b99f6cd440bf06b99732f0",
+    "boot/vendor/kshim/tests/atlas_menu_test.c": "7614c29f756be24cd7cf8d34f1c0cbe6967c84cfcbd167ce893ff518a74f0c4d",
+    "boot/vendor/kshim/tests/tb323fu_menu_test.c": "4f6343b4dad4d8fa3e5dd8a12e99d7be0e069be2d9483f8dd3b8586502139d8c",
+    "tests/boot_files_dtb_test.c": "7958129a510325eba9c39abdff4a63928c6cbef198fcd82f950de0a37fc0323f",
+    "tests/test_boot_files.py": "96d4b0ea9114a668a8d62604b6a1eb6b59002136d45c2007894b053a81f7e69c",
+    "tools/boot_files.py": "b961e9f1f17d4f1955e1539aede202384487ec91fe114e882848c99c2d8a991a",
+    "tools/build_boot_tools.py": "5b21c6babea8d1c5edf87f3f0bb1899792182d74e355a7fca6ca7048be18e0a7"
+  },
+  "log_sha256": {
+    "_build/capacity-v15-build.log": "dcba54b709f576337aa974f05d4faeb0ecb2d76aea6f2f84c41214a8f949bb99",
+    "_build/capacity-v15-tools/compile-kshim.log": "667ba256aa732c8ceb343fbc57b6fc3783efa5d161ba438e89e140c16ccb991a",
+    "_build/capacity-v15-host-config.log": "6fc2a79c67704d04eb5c75e59f319efcce5fc52678d4223a0a96b9e580bf4134",
+    "_build/capacity-v15-host-build.log": "93140f232f97ee0f17dc0548dd7445742aa1a0864da6f813fd4f38086cb1762c",
+    "_build/capacity-v15-tests.log": "7f1741faa2707828ca1dade4fb03811921da5e279de477eb7b7a7cc255ba1f08",
+    "_build/capacity-v15-dtb.log": "287d6c3bbb21bfea95de0ba8f0f68bb275d0f378e2c3a95b936019f02de8555d",
+    "_build/capacity-v15-handoff.log": "d1a71263e23a5739f30f6b62ad124725da6416303b87c7ccb3afbd780ace8492",
+    "_build/capacity-v15-platform.log": "7dfe6a1694ef75587d259bfd7ab24654d845b3bec1a3fc370a7e3c476469a043",
+    "_build/capacity-v15-menu.log": "a223ca79210fc6bf1461d7e7c3d791ccc7daa06b1c956a13d807737db10b87a9",
+    "_build/capacity-v15-pack.log": "061a742dc66133b91c88e7cd7864552eae53a698049fb7788b88ce02f782e784",
+    "_build/capacity-v15-avb.log": "e489807636a546ebf6dd70bad626f99d440ad68edffeec1c2f9510d1009ac901",
+    "_build/capacity-v15-roundtrip.log": "790e5b984128af3bfeb0fc1e988de8d8018cb70ec14d8aa65b5424c100029aa5",
+    "_build/capacity-v15-symbols.txt": "f12cbfcaf3e5a0cca5b81a8572266f75290c7a3dbea265a01591fcc60a3d71d9"
+  }
+}

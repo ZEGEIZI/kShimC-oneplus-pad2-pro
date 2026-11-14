@@ -1,0 +1,18 @@
+{
+  "url": "https://github.com/Project-Aloha/CrDK",
+  "commit": "f23922d9f044fc4c32748da821d6ee1084df9d3f",
+  "license": "MIT",
+  "upstream_sha256": {
+    "LICENSES/GPL-2.0.txt": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "LICENSES/MIT.txt": "148feea10742181bf55190af0ff59b4c34509f473000525c5d15e5e06668f514",
+    "NhBase.c": "bf4528c4fcb60dbfbe6738e501824f9f71a9b1b14906d6176890f39efc77d72d",
+    "NhExt4.c": "5a6025452322d86b7a7c327820cae35f7fc56bf1b672265c7578df3a6f979e10",
+    "NhFs.c": "5d2ea967eb5c312734f49d60c86bdab8e31bc1a39f7ce5886184725825f352e3",
+    "NhInternal.h": "804f84528064f19215029cf50accba99b5a6e261ea4634b30363ddd6a6e2ed78",
+    "NhString.h": "9c08e56fc07606c9da1db7457412ebce3e5b53c46fbbf1aab90bfb7eb06c8de7",
+    "PROVENANCE.json": "31e5a7633ba6d9aa1631e1d92b7bafcc559ceeef7d81ccfefc189cb09e383ecd",
+    "README.md": "aa87e9fe8964425233d1e324df052f3ccdf9ba1b69afeae14964bec82e4d498b",
+    "include/Library/FirmwareLoaderLib/NhFs.h": "8eae0152ceb6990a5742b7d63419420fa4e63022d865a5a52a522e8efba9dfe6"
+  },
+  "local_changes": "NhFs.c: restrict dispatch to ext4; NhExt4.c: reject unknown read-only features and invalid clean state. See local.patch."
+}

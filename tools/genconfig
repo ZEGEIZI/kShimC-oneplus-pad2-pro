@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+tool_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+export PYTHONPATH="$tool_dir/../boot/vendor/kconfiglib${PYTHONPATH:+:$PYTHONPATH}"
+exec python3 -m genconfig "$@"

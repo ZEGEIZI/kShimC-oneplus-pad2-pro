@@ -1,0 +1,11 @@
+[Unit]
+Description=Verify the complete OPD2413 RAM module tree
+DefaultDependencies=no
+Before=sysinit.target opd2413-brahma08.service opd2413-speaker-id.service
+ConditionPathExists=/run/opd2413-full-modules/verify-full-modules.sh
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /run/opd2413-full-modules/verify-full-modules.sh
+TimeoutStartSec=60
+RemainAfterExit=yes

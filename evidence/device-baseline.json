@@ -1,0 +1,13 @@
+{
+  "date_local": "2026-11-10",
+  "board": "OnePlus Pad 2 Pro OPD2413",
+  "ram_spec_gb": 16,
+  "linux_release": "7.2.6-opd2413-full-system03",
+  "boot_partition": {"device": "/dev/sda16", "gpt_name": "ARMADA_BOOT", "partuuid": "d4d95497-250b-4023-98eb-a8977664e385", "bytes": 1073741824, "filesystem": "ext4", "mount": "/boot", "mount_options": "ro,relatime", "state": "clean", "block_size": 4096},
+  "read_only_checks": true,
+  "boot_a_sha256": "0ccf10f07aafa16062df60b7e5ec8ec2bee91aa71250e1478954f8a489e92b11",
+  "init_boot_a_sha256": "3e563c87f4caa639bd8eb5c4df4c591eb64b16fcfe18e6636c780d9783f0c6f4",
+  "vendor_boot_a_sha256": "c2b5d48f652cfffe205549ba0bd421238d4af89924d702259623df80f15448b1",
+  "live_boot_runtime_sha256": "d6f6b02f81a7e380f7f25f168e21e47dfcd80b6383a8ef6ef80d70b9849119d7",
+  "note": "USB read-only diagnostics and SSH read-only checks. Full logs and partition images are local ignored _build inputs. This is the baseline, not verification of the new loader."
+}

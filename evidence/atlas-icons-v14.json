@@ -1,0 +1,76 @@
+{
+  "version": "Atlas icons v14",
+  "date_local": "2026-11-10",
+  "passed": true,
+  "hardware_verified": false,
+  "device_written": false,
+  "artifact": "artifacts/android-ext4-atlas-icons-v14",
+  "boot": {
+    "passed": true,
+    "mode": "external-production",
+    "hardware_verified": false,
+    "boot_sha256": "fe819e06f360d79a018e1c311ee48405bf6169eb9b73befe7bdebc517d4d0bf5",
+    "stock_boot_sha256": "2225e3447ee3c3833dea11aedc82f3123d3d391ab231b791c4b90a65e56169ce",
+    "runtime_sha256": "462b37cc6d7d060194582e507e08b5b9e8b2e302a20e238f4ce8604e077c1417",
+    "packed_kernel_bytes": 45744332,
+    "layout": {
+      "entries": [
+        {
+          "offset": 0,
+          "bytes": 36731392,
+          "type": 1,
+          "flags": 5,
+          "dtb_index": 0,
+          "name": "原厂 Android"
+        },
+        {
+          "offset": 37355520,
+          "bytes": 8388608,
+          "type": 3,
+          "flags": 4,
+          "dtb_index": 0,
+          "name": "Attached Shim"
+        }
+      ],
+      "linux_embedded": false,
+      "android_retained": true,
+      "original_base_restored": true,
+      "runtime_slot_bytes": 8388608
+    },
+    "device_written": false
+  },
+  "changes": [
+    "Linux artwork for unknown main/external system and kernel rows without renaming caller labels",
+    "Language globe and boot delay clock artwork with reserved text columns",
+    "Explicit back role for external chooser row zero",
+    "Diagnostic/device icon mappings and information fallback for unmapped roles"
+  ],
+  "verification": {
+    "real_lvgl_asan_ubsan": true,
+    "lvgl_heap_bytes": 524288,
+    "selectable_rows_have_one_nonempty_visible_icon": true,
+    "icon_text_bounds_do_not_overlap": true,
+    "key_index_mapping": true,
+    "repeated_ui_lifecycles": 3,
+    "platform_page_actions": true,
+    "arm64_build_and_8m_link_assert": true,
+    "production_layout_and_android_restoration": true,
+    "avb_hash": true,
+    "visual_review": "_build/atlas-icons-v14-preview/overview.png"
+  },
+  "pending": "User manual fastboot boot to inspect menu icons and boot Linux/Android",
+  "source_sha256": {
+    "boot/vendor/kshim/src/ui/atlas_icons.h": "e8e6647503acf2269c2d67a0c26cddb43a56b7f653fb4b7b54659164bc7f5762",
+    "boot/vendor/kshim/src/ui/menu_atlas.h": "1c9c046bfe8a76f5d0b38127b86ee6ed53db9a8c798eb9fdea3e831561f28ea8",
+    "boot/vendor/kshim/src/arch/arm64/boot_files_native.c": "494c313535ef0e32ebe25dedab86f2942b6773deda21662c5474ec0715d1484d",
+    "boot/vendor/kshim/tests/atlas_menu_test.c": "ceef205c6c603a57b3c57ddac147e57debad13b18ac14cebd8362df31c6d6eee"
+  },
+  "log_sha256": {
+    "_build/atlas-icons-v14-host-build.log": "d3037d9ef871ed2b9661b33c4ea427e817b0b088a6c9be1c857a1e9e30a255d8",
+    "_build/atlas-icons-v14-menu.log": "b345340020dc1a5f008c12379d4bbf5ffe270b1e1aebc7e2f7ed86cc4683690d",
+    "_build/atlas-icons-v14-platform.log": "7dfe6a1694ef75587d259bfd7ab24654d845b3bec1a3fc370a7e3c476469a043",
+    "_build/atlas-icons-v14-build.log": "14a087fa4bd2186baddae1f0a00de9cf619d12e52b65c02a1948bc9a7086afd9",
+    "_build/atlas-icons-v14-pack.log": "2a44e4a5db50b2a2b65f49bdb3725af0d7b758c19d14016693d0d6624812172b",
+    "_build/atlas-icons-v14-avb.log": "5a8998e86a5df669c48230d7091fc62d5fc8db725208a084aa03e9602d5e76c1"
+  }
+}

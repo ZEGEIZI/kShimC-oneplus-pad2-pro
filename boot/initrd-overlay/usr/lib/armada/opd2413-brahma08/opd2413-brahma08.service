@@ -1,0 +1,12 @@
+[Unit]
+Description=OPD2413 Brahma 2.0 temporary transport
+DefaultDependencies=no
+After=systemd-udevd.service systemd-udev-trigger.service
+Before=sysinit.target bluetooth.service
+ConditionPathExists=/run/opd2413-brahma08/start-brahma08.sh
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /run/opd2413-brahma08/start-brahma08.sh
+TimeoutStartSec=60
+RemainAfterExit=yes

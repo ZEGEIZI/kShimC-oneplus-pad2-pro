@@ -1,0 +1,17 @@
+{
+  "date_local": "2026-11-10",
+  "target_partuuid": "d4d95497-250b-4023-98eb-a8977664e385",
+  "system": "armadaos",
+  "version": "current-baseline-20261110",
+  "published": true,
+  "mount_restored_read_only": true,
+  "source": "Exact payloads exported from baseline boot_a",
+  "files_sha256": {
+    "cmdline.txt": "ac687e7e6dae6061eacc44d852e13bb353b9c13d0358330682c4d59fe9c635ed",
+    "Image": "1ceff87e3850b5624e66f7818e8dedd7b7264c395d60741a7d122f082147ec99",
+    "initramfs.img": "3435147492be2abbc36aadde1f373a7261f8dec7c247673e640f042d63b7e166",
+    "board.dtb": "568115f3d7071520cb6d75826bc53e8472e161ede85b1544f93a6b95d4f86252"
+  },
+  "android_partition_hashes_unchanged": true,
+  "external_boot_hardware_verified": false
+}

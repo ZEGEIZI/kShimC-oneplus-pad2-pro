@@ -1,0 +1,36 @@
+{
+  "publication": {
+    "system": "armadaos",
+    "current": "kernel-copy-test-20261110",
+    "previous": "current-baseline-20261110",
+    "versions": [
+      "kernel-copy-test-20261110",
+      "current-baseline-20261110"
+    ],
+    "android_boot_written": false
+  },
+  "source_version": "current-baseline-20261110",
+  "copy_version": "kernel-copy-test-20261110",
+  "identical_payloads": true,
+  "same_kernel_build": true,
+  "original_config_backup": "/boot/kshim/systems/armadaos/entries.pre-multikernel-v10.conf",
+  "original_entries": "format=1\ncurrent=current-baseline-20261110\nprevious=none\n",
+  "new_entries": "format=2\ncurrent=kernel-copy-test-20261110\nprevious=current-baseline-20261110\nversions=kernel-copy-test-20261110,current-baseline-20261110\n",
+  "file_sha256": {
+    "image": "1ceff87e3850b5624e66f7818e8dedd7b7264c395d60741a7d122f082147ec99",
+    "dtb": "568115f3d7071520cb6d75826bc53e8472e161ede85b1544f93a6b95d4f86252",
+    "initrd": "3435147492be2abbc36aadde1f373a7261f8dec7c247673e640f042d63b7e166"
+  },
+  "android_partitions_before": {
+    "boot_a": "0ccf10f07aafa16062df60b7e5ec8ec2bee91aa71250e1478954f8a489e92b11",
+    "init_boot_a": "3e563c87f4caa639bd8eb5c4df4c591eb64b16fcfe18e6636c780d9783f0c6f4",
+    "vendor_boot_a": "c2b5d48f652cfffe205549ba0bd421238d4af89924d702259623df80f15448b1"
+  },
+  "android_partitions_after": {
+    "boot_a": "0ccf10f07aafa16062df60b7e5ec8ec2bee91aa71250e1478954f8a489e92b11",
+    "init_boot_a": "3e563c87f4caa639bd8eb5c4df4c591eb64b16fcfe18e6636c780d9783f0c6f4",
+    "vendor_boot_a": "c2b5d48f652cfffe205549ba0bd421238d4af89924d702259623df80f15448b1"
+  },
+  "global_config_unchanged": true,
+  "mount_restored_read_only": true
+}

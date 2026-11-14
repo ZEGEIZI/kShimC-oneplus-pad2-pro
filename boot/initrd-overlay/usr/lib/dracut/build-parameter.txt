@@ -1,0 +1,1 @@
+ --force --no-hostonly --reproducible --xz --kver '7.2.6-opd2413-full-system03' --add 'ostree' --add 'armada-splash' --add 'armada-ostree-fallback'

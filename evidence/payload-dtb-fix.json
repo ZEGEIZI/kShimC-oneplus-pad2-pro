@@ -1,0 +1,11 @@
+{
+  "candidate": "debug-v7",
+  "runtime_sha256": "93336c0d96a3635d1c924dce53d382dbab2825ed6d42f827fd595832bab4668f",
+  "boot_sha256": "b4ba54e2ef1b0903e85e6d4b60c2dd48d200af9a2b14a7a49b2f6b01f13100da",
+  "cross_build_passed": true,
+  "actual_exported_dtb_host_check_passed": true,
+  "wrong_board_soc_and_malformed_compatible_tests_passed": true,
+  "stock_hardware_admission_unchanged": true,
+  "hardware_verified": false,
+  "device_action_after_manual_testing_request": false
+}

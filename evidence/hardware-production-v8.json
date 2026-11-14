@@ -1,0 +1,20 @@
+{
+  "date_local": "2026-11-10",
+  "candidate": "android-ext4-v8",
+  "boot_sha256": "0c9143b13e1a353ab7dec342576f1e37cc6393f752f90200e6998c21967f075c",
+  "runtime_sha256": "21d2d355eced77c5f1a1d7aa62739bab687d33d7c328334c437321157bd6c477",
+  "ram_spec_gb": 16,
+  "method": "Owner manually used fastboot boot; no flashing",
+  "linux_embedded": false,
+  "android_retained": true,
+  "packed_kernel_bytes": 41550028,
+  "linux_external_boot_owner_confirmed": true,
+  "android_main_menu_boot_owner_confirmed": true,
+  "external_submenu_return_behavior_confirmed": true,
+  "independent_ssh_or_adb_capture_for_production_candidate": false,
+  "debug_v8_read_only_ssh_evidence": "evidence/hardware-v8.json",
+  "boot_partition_flashed": false,
+  "automatic_update_hooks_migrated": false,
+  "second_linux_system_verified": false,
+  "ram_12gb_verified": false
+}

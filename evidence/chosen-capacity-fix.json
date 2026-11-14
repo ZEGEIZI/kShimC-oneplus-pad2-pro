@@ -1,0 +1,11 @@
+{
+  "candidate": "debug-v8",
+  "boot_sha256": "3aa47171d7ff245ac2a0744e4e4320ac8e83dd09d7ef7385c729c278023c745c",
+  "runtime_sha256": "21d2d355eced77c5f1a1d7aa62739bab687d33d7c328334c437321157bd6c477",
+  "packed_dtb_nospace_regression_reproduced": true,
+  "actual_runtime_and_linux_dtb_merge_chosen_pack_passed": true,
+  "max_cmdline_external_and_builtin_initrd_checks_passed": true,
+  "sanitizers_halt_on_error": true,
+  "hardware_verified": false,
+  "device_action_after_manual_testing_request": false
+}

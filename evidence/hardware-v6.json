@@ -1,0 +1,11 @@
+{
+  "candidate": "debug-v6",
+  "boot_sha256": "361835a3fd8d3b6289793c5a3f238cbdae06c8e908c9aa0aae55be784ca32937",
+  "user_observation": "External menu can be operated; selecting the Linux entry shows payload -11 L0 op28 s0 k0 00/00 ...; selecting Return reaches the parent menu.",
+  "menu_reentry_hardware_verified": true,
+  "external_linux_boot_verified": false,
+  "source_analysis": "The exported Linux DTB declares oneplus,opd2413 + qcom,sm8750; device_info_read deliberately identifies only the stock ABL model/panel fingerprint, so its board is UNKNOWN. This was incorrectly used to reject the Linux payload.",
+  "offline_regression": "boot_files_dtb_test confirms stock board UNKNOWN for this compatible pair, validates the actual exported DTB using the new payload check, and rejects wrong/malformed/conflicting board and SoC declarations.",
+  "next_candidate": "debug-v7",
+  "device_action_after_manual_testing_request": false
+}

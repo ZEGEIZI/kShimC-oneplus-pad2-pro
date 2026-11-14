@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "image_id": "sha256:e156c221ee308ba5870af3c17d278597221912a1de32fbd79aed45874abb2fe5",
+  "base_image": "ubuntu@sha256:008173c23f95b170204355c12626cb5a965d779a7e1283b09e9cffbb1bf33ca3",
+  "archive": "local/toolchain.docker.tar.zst",
+  "archive_sha256": "416da2e30468cfce823b73beea48191d267bc3bd285a742f96104d91107c154b",
+  "bytes": 579736213,
+  "versions": {
+    "gcc": "aarch64-linux-gnu-gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "ld": "GNU ld (GNU Binutils for Ubuntu) 2.42",
+    "cmake": "cmake version 3.28.3",
+    "qemu": "QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.18)"
+  },
+  "workspace_bind_mount_excluded": true,
+  "origin": "Frozen existing verified Ubuntu24.04 compiler container; no dependency on its running name after docker load"
+}

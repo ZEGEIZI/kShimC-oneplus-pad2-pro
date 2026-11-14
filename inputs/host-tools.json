@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "architecture": "x86_64",
+  "loader": "lib/ld-linux-x86-64.so.2",
+  "tools": {
+    "zstd": {
+      "binary": "bin/zstd",
+      "sha256": "416fe8c3624588f798c5141b69f603920eedb96495df9529ded27dd6f5714815",
+      "source": "/usr/bin/zstd",
+      "static": false
+    },
+    "depmod": {
+      "binary": "bin/depmod",
+      "sha256": "d929d51dbb1694f77ec985b720d47eb351b4b402bfec43a14895bc682d1255a5",
+      "source": "/usr/bin/depmod",
+      "static": false
+    },
+    "img2simg": {
+      "binary": "bin/img2simg",
+      "sha256": "209d4401ce392bbac82eea08d30ece24cd5e40c7f2a3b0ac3cca6f3ce32a7449",
+      "source": "/usr/bin/img2simg",
+      "static": false
+    },
+    "simg2img": {
+      "binary": "bin/simg2img",
+      "sha256": "809e1557df6ffbf8fe53af9aa783107b92632943e49c72e6cbc86193fc163d79",
+      "source": "/usr/bin/simg2img",
+      "static": false
+    },
+    "dtc": {
+      "binary": "bin/dtc",
+      "sha256": "a867c42b00d1740b10ae95f62c629ed4c1435a08c813487018f927f659fbba57",
+      "source": "/usr/bin/dtc",
+      "static": false
+    },
+    "fdtget": {
+      "binary": "bin/fdtget",
+      "sha256": "96ed315b5bdc9ca03134d114070846eeb8e37f8d7c8fef59688a5d84b02102a3",
+      "source": "/usr/bin/fdtget",
+      "static": false
+    },
+    "fdtput": {
+      "binary": "bin/fdtput",
+      "sha256": "59e077f51cde3ee454f47cd44653b97193d1fafffc9175c170183cb60baa516f",
+      "source": "/usr/bin/fdtput",
+      "static": false
+    },
+    "xz": {
+      "binary": "bin/xz",
+      "sha256": "4182bfda9f5658a1dba84788983df3c8a5dc80df971a8d1de7126523c95b4e6f",
+      "source": "/usr/bin/xz",
+      "static": false
+    }
+  },
+  "libraries": {
+    "libzstd.so.1": "c60355be9fecd6434fdf19b824d4fd6758191e19277fd8618f0e255196384e53",
+    "libz.so.1": "dd431f5f96828f497c8f087d54a0c28395ddf8b1adc1f32c2adc2ed0eb6bc78c",
+    "liblzma.so.5": "229f1b4044fb1c6a4ef9a1f95748d096536d5c3c7808a0266960c1fac0302d38",
+    "liblz4.so.1": "35218f46bacb0de833d835d16a62816beb89efd73e204c624a0d124682476ebb",
+    "libc.so.6": "911cf3db7875760dc893b464ae89bddd4f697a377c710ffc13b84f67cbe1237b",
+    "ld-linux-x86-64.so.2": "2db4c1e54273a52f75e7124fcfd6fe0d2d8bd7fc87f29780a75ab544b41bd53d",
+    "libcrypto.so.3": "03526e3c2a358fb04de4297e0e89ac96af9d825c609c4ad752bde75adf64604b",
+    "libgcc_s.so.1": "0c72e3b664285da4f964dd500ecd1a220f7200535a12635a789371b19f927ed8",
+    "libbrotlienc.so.1": "fa56c9a51aa4cb60cbcc4df55988383b6f73bd7babafa0cdd47e9b6cb3d36f68",
+    "libbrotlidec.so.1": "3fb0d52f548d532ad899347b86e95dd4ac2ed699ee1904caa0aa60d6ec138e8f",
+    "libm.so.6": "b42c5cc9e920e2df2038d06dce1124432e874fbe692c7275c866f9c19137b7a7",
+    "libbrotlicommon.so.1": "4c90e84bb197361f30996ddc75280aa23c78286e721ddc376c068df0836243fc",
+    "libstdc++.so.6": "3d63f17f366cd1795c17bcb9680dc6287239b8826668ad9b96d41a07823928d1",
+    "libyaml-0.so.2": "b5b99bfa486f3dcbb67e5a22b11ce3536e4bee576999d03f8d62a3b53612fda3",
+    "libfdt.so.1": "e22c4e9d0f2d458762459645654f5c859589cdb96dc2fecc928ed7e553826be4"
+  },
+  "provenance": "Exact existing host tools and dynamic dependency closures used to build the verified29 image; local offline inputs"
+}

@@ -1,0 +1,12 @@
+{
+  "origin": "Frozen common kShim source snapshot plus local tested OPD2413 support; unused third-party Git/docs/tests/examples excluded",
+  "submodules": {
+    "third_party/lvgl": "7f07a129e8d77f4984fff8e623fd5be18ff42e74",
+    "lib/picolibc": "f7edb0869e64b9d687f46961adeef7154921fe92",
+    "lib/CrDK": "b6c3335136b7f6b28271917de11e8f11982975fc"
+  },
+  "reference_runtime_sha256": "d6f6b02f81a7e380f7f25f168e21e47dfcd80b6383a8ef6ef80d70b9849119d7",
+  "reference_config_sha256": "ea51df1ec5a11b5e884027f04df124ca9070029b89bc2a981f1bd8b8fdbff1db",
+  "source_date_utc": "2026-11-05 02:44:07",
+  "kconfiglib_version": "14.1.0"
+}
